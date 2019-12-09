@@ -1,4 +1,4 @@
-# 查询TopN媒资信息<a name="ZH-CN_TOPIC_0133737286"></a>
+# 查询TopN媒资信息<a name="vod_04_0105"></a>
 
 ## 功能描述<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section114814192538"></a>
 
@@ -29,7 +29,7 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/top-statistics
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p8361154813166"><a name="p8361154813166"></a><a name="p8361154813166"></a>TopN媒资信息要么查询单个域名要么查询所有域名。</p>
 <p id="p127871167428"><a name="p127871167428"></a><a name="p127871167428"></a>取值如下：</p>
-<a name="ul11782191634215"></a><a name="ul11782191634215"></a><ul id="ul11782191634215"><li>单个加速域名，格式：www.test1.com。</li><li>ALL：表示查询名下全部域名。</li></ul>
+<a name="ul11782191634215"></a><a name="ul11782191634215"></a><ul id="ul11782191634215"><li>单个加速域名，格式：<span id="ph12327172911410"><a name="ph12327172911410"></a><a name="ph12327172911410"></a>example</span>.test1.com。</li><li>ALL：表示查询名下全部域名。</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p33910007"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p33910007"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p33910007"></a>M</p>
 </td>

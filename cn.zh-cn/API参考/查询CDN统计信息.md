@@ -1,4 +1,4 @@
-# 查询CDN统计信息<a name="ZH-CN_TOPIC_0133737284"></a>
+# 查询CDN统计信息<a name="vod_04_0103"></a>
 
 ## 功能描述<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section114814192538"></a>
 
@@ -28,7 +28,7 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/cdn-statistics
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p129571139515"><a name="p129571139515"></a><a name="p129571139515"></a>域名列表，多个域名以逗号（半角）分隔。</p>
-<p id="p133714813111"><a name="p133714813111"></a><a name="p133714813111"></a>示例：example.test1.com,example.test2.com。</p>
+<p id="p133714813111"><a name="p133714813111"></a><a name="p133714813111"></a>示例：<span id="ph081601184116"><a name="ph081601184116"></a><a name="ph081601184116"></a>example</span>.test1.com,www.test2.com。</p>
 <p id="p1312433710114"><a name="p1312433710114"></a><a name="p1312433710114"></a>ALL表示查询名下全部域名。一次最多查询100个域名。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p33910007"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p33910007"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p33910007"></a>M</p>
