@@ -1,4 +1,4 @@
-# 配置CNAME<a name="ZH-CN_TOPIC_0129956779"></a>
+# 配置CNAME<a name="live010010"></a>
 
 域名添加后，系统将会为您自动分配一个CNAME值。您需要在域名DNS服务商处完成CNAME解析配置，配置生效后，即可启用加速服务。
 

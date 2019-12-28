@@ -1,4 +1,4 @@
-# 获取项目ID<a name="ZH-CN_TOPIC_0128969677"></a>
+# 获取项目ID<a name="zh-cn_topic_0128969677"></a>
 
 项目ID（Project ID）是识别客户身份的唯一ID。
 

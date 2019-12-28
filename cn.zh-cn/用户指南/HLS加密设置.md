@@ -27,7 +27,7 @@
 
     **获取密钥URL：**如前提条件中搭建的密钥管理服务的地址。
 
-    **示例**：https<span>://</span>domain-sample/get-key
+    **示例**：https://domain-sample/get-key
 
 4.  单击“确认”，完成配置。
 5.  配置完成后，您需要使用转码功能对视频文件进行加密。

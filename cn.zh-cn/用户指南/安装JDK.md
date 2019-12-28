@@ -1,4 +1,4 @@
-# 安装JDK<a name="ZH-CN_TOPIC_0141694140"></a>
+# 安装JDK<a name="vod_01_0055"></a>
 
 本节主要介绍如何在Windows和Linux端安装JDK，并验证是否安装成功。
 
