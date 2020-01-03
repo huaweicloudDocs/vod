@@ -301,7 +301,7 @@ http://1.cdn.myhuaweicloud.com/afa20c956043fe6d130b16f2704ac870/5C3739DE/asset/6
 **加密串**和**EncodedIV**的计算公式：
 
 -   加密原始串 = url\_encoding\(\{path\}+"$"+\{Timestamp\}\)
--   加密串 = aes\_cbc\_128\_pkcs5padding\(加密原始串,key,IV\)
+-   加密串 = aes\_cbc\_128\_pkcs5padding\(原始加密串,key,IV\)
 -   EncodedIV = hex\(IV\)
 
 **表 5**  鉴权字段描述
@@ -356,7 +356,7 @@ Timestamp：20190805102430
 
 ```
 原始加密串 = url_encoding("/asset/32237c8f68fcc6071a2d8e3421eee20d/play_video/$20190805102430")= "%2fasset%2f32237c8f68fcc6071a2d8e3421eee20d%2fplay_video%2f%2420190805102430"
-加密串 = aes_cbc_128_pkcs5padding(原始加密串,key,hex(IV)) = 34M%2F6KtYgxuAozdBLIVTe0dUVAZdvXsYQoYAnDmuhRHh1hshYg%2B2Tl0AmSwySDh%2BmkER44qYKpSP%2BgfsLM%2FIZe4F6K4n1Nx6ouGwyKfqdDA%3D
+加密串 = aes_cbc_128_pkcs5padding(原始加密串,key,IV) = 34M%2F6KtYgxuAozdBLIVTe0dUVAZdvXsYQoYAnDmuhRHh1hshYg%2B2Tl0AmSwySDh%2BmkER44qYKpSP%2BgfsLM%2FIZe4F6K4n1Nx6ouGwyKfqdDA%3D
 EncodedIV = hex(IV) = 79436d453636364e335941713330534e
 ```
 
