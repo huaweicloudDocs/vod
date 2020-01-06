@@ -1,4 +1,4 @@
-# 创建媒资：URL拉取注入<a name="ZH-CN_TOPIC_0165670818"></a>
+# 创建媒资：URL拉取注入<a name="vod_04_0052"></a>
 
 ## 功能描述<a name="section4915145617137"></a>
 

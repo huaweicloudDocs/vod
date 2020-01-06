@@ -1,4 +1,4 @@
-# 指定媒资ID预热<a name="ZH-CN_TOPIC_0145105867"></a>
+# 指定媒资ID预热<a name="zh-cn_topic_0145105867"></a>
 
 ## 功能描述<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section114814192538"></a>
 

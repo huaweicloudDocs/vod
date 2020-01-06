@@ -1,4 +1,4 @@
-# CDN预热接口<a name="ZH-CN_TOPIC_0129004469"></a>
+# CDN预热接口<a name="zh-cn_topic_0129004469"></a>
 
 -   **[指定媒资ID预热](指定媒资ID预热.md)**  
 

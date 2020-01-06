@@ -1,4 +1,4 @@
-# 创建媒资：OBS转存方式<a name="ZH-CN_TOPIC_0129004455"></a>
+# 创建媒资：OBS转存方式<a name="zh-cn_topic_0129004455"></a>
 
 ## 功能描述<a name="section157020365410"></a>
 

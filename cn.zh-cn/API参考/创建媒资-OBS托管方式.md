@@ -1,4 +1,4 @@
-# 创建媒资：OBS托管方式<a name="ZH-CN_TOPIC_0160575152"></a>
+# 创建媒资：OBS托管方式<a name="vod_04_0051"></a>
 
 ## 功能描述<a name="section11101332175018"></a>
 
