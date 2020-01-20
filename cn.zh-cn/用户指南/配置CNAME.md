@@ -4,13 +4,13 @@
 
 ## 注意事项<a name="zh-cn_topic_0117188957_section421012115244"></a>
 
--   若您添加的域名是在华为云域名注册服务申请的，请参考[操作步骤](#section6663324202916)配置CNAME解析。
--   若您添加的域名不是在华为云域名注册服务申请的，您可以先将域名转入华为云管理，具体操作请参见[域名迁移](https://support.huaweicloud.com/dns_faq/dns_faq_001.html)，转入后再执行[操作步骤](#section6663324202916)配置CNAME解析。您也可以参考[配置CNAME解析（非华为云）](配置CNAME（非华为云）.md)，在对应域名服务提供商处进行配置，如指导与实际配置不符，请以各自域名服务提供商的指导信息为准。
+-   若您添加的域名是在华为云[域名注册服务](https://support.huaweicloud.com/domain/index.html)申请的，请参考[操作步骤](#section6663324202916)配置CNAME解析。
+-   若您添加的域名是通过第三方域名注册商注册的，您可以先通过[创建公网域名](https://support.huaweicloud.com/usermanual-dns/zh-cn_topic_0035467702.html#section3)操作将域名添加至云解析服务。然后再执行[操作步骤](#section6663324202916)配置CNAME解析。您也可以参考[配置CNAME解析（非华为云）](配置CNAME（非华为云）.md)，在对应域名服务提供商处进行配置，如指导与实际配置不符，请以各自域名服务提供商的指导信息为准。
 -   您需要分别对推流域名和播放域名进行CNAME配置。
 
 ## 操作步骤<a name="section6663324202916"></a>
 
-下面以播放域名为例，推流域名的CNAME配置步骤相同，对推流域名及对应的CNAME进行绑定。
+下面以播放域名为例，推流域名的CNAME配置步骤相同。
 
 1.  <a name="li184701358115720"></a>获取域名对应的CNAME值。
     1.  登录[视频直播控制台](视频直播控制台https://console.huaweicloud.com/live)，在左侧导航树中选择“域名管理 ”，进入域名管理页面。
@@ -71,10 +71,19 @@
     <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p191215507322"><a name="zh-cn_topic_0117188957_p191215507322"></a><a name="zh-cn_topic_0117188957_p191215507322"></a>选择“CNAME-将域名指向另外一个域名”。</p>
     </td>
     </tr>
+    <tr id="row170145193715"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p41125123715"><a name="p41125123715"></a><a name="p41125123715"></a>别名<a href="https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0010.html" target="_blank" rel="noopener noreferrer">解析线路</a></p>
+    </td>
+    <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="p148333013716"><a name="p148333013716"></a><a name="p148333013716"></a>用于是否将此记录集关联至云服务资源实例。</p>
+    <a name="ul14834306376"></a><a name="ul14834306376"></a><ul id="ul14834306376"><li>是：为此记录集关联云服务资源实例，详细说明请参见<a href="https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0017.html" target="_blank" rel="noopener noreferrer">设置记录集别名</a>。</li><li>否：不为此记录集关联云服务资源实例。</li></ul>
+    </td>
+    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p51185203715"><a name="p51185203715"></a><a name="p51185203715"></a>否</p>
+    </td>
+    </tr>
     <tr id="zh-cn_topic_0117188957_row17912950153210"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p129121850183215"><a name="zh-cn_topic_0117188957_p129121850183215"></a><a name="zh-cn_topic_0117188957_p129121850183215"></a>线路类型</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p691245011321"><a name="zh-cn_topic_0117188957_p691245011321"></a><a name="zh-cn_topic_0117188957_p691245011321"></a>用于DNS服务器在解析域名时，根据访问者的来源，返回对应的服务器IP地址，详细了解可参见<a href="https://support.huaweicloud.com/productdesc-dns/zh-cn_topic_0089177011.html" target="_blank" rel="noopener noreferrer">解析线路</a>。</p>
-    <p id="zh-cn_topic_0117188957_p159121250113210"><a name="zh-cn_topic_0117188957_p159121250113210"></a><a name="zh-cn_topic_0117188957_p159121250113210"></a>添加解析线路类型时，切记先添加默认线路类型，以保证网站可访问。</p>
+    <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p691245011321"><a name="zh-cn_topic_0117188957_p691245011321"></a><a name="zh-cn_topic_0117188957_p691245011321"></a>用于DNS服务器在解析域名时，根据访问者的来源，返回对应的服务器IP地址，具体请参见<a href="https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0041.html" target="_blank" rel="noopener noreferrer">解析线路</a>。</p>
+    <p id="p203987321322"><a name="p203987321322"></a><a name="p203987321322"></a>默认值为“全网默认”。</p>
+    <p id="p1639815326325"><a name="p1639815326325"></a><a name="p1639815326325"></a>仅支持为公网域名的记录集配置此参数。</p>
     </td>
     <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p291285073216"><a name="zh-cn_topic_0117188957_p291285073216"></a><a name="zh-cn_topic_0117188957_p291285073216"></a>选择“全网默认”。</p>
     </td>
@@ -84,7 +93,7 @@
     <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p891255003218"><a name="zh-cn_topic_0117188957_p891255003218"></a><a name="zh-cn_topic_0117188957_p891255003218"></a>记录集的有效缓存时间，以秒为单位。</p>
     <p id="p199661315514"><a name="p199661315514"></a><a name="p199661315514"></a>数值越小，修改记录各地生效时间越快。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p6912155073213"><a name="zh-cn_topic_0117188957_p6912155073213"></a><a name="zh-cn_topic_0117188957_p6912155073213"></a>默认为“5min”，若无特殊需求，可直接保持默认选择。</p>
+    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p6912155073213"><a name="zh-cn_topic_0117188957_p6912155073213"></a><a name="zh-cn_topic_0117188957_p6912155073213"></a>默认为“5分钟”，若无特殊需求，可直接保持默认选择。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row19912195016327"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p1991217505327"><a name="zh-cn_topic_0117188957_p1991217505327"></a><a name="zh-cn_topic_0117188957_p1991217505327"></a>值</p>
@@ -97,10 +106,9 @@
     </tr>
     <tr id="row19122133853010"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p64191365312"><a name="p64191365312"></a><a name="p64191365312"></a>权重</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="p1754035633020"><a name="p1754035633020"></a><a name="p1754035633020"></a>解析记录的权重，可选参数，默认值为1。</p>
+    <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="p1754035633020"><a name="p1754035633020"></a><a name="p1754035633020"></a>可选参数，解析记录的权重，当域名有多条某一类型的解析记录时，根据权重数值选择解析记录，权重数值越高，优先级越高。默认值为1。</p>
     <p id="p175401456123015"><a name="p175401456123015"></a><a name="p175401456123015"></a>仅支持为公网域名的记录集配置此参数。</p>
     <p id="p254075633018"><a name="p254075633018"></a><a name="p254075633018"></a>取值范围：0~100。</p>
-    <p id="p18540155633011"><a name="p18540155633011"></a><a name="p18540155633011"></a>当域名有多条某一类型的解析记录时，根据权重数值选择解析记录，权重数值越高，优先级越高。</p>
     </td>
     <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p1712383819301"><a name="p1712383819301"></a><a name="p1712383819301"></a>1</p>
     </td>
@@ -124,14 +132,15 @@
     </tbody>
     </table>
 
-6.  单击“确定“，完成添加。CNAME记录添加完成后实时生效。
-7.  您需要按照以上步骤对推流域名进行CNAME解析配置。
+6.  <a name="li0498111464411"></a>单击“确定“，完成添加。
+
+    您可以在域名对应的记录集列表中查看添加的记录集。当记录集的状态显示为“正常”时，表示记录集添加成功。
+
+7.  执行[步骤1](#li184701358115720)-[步骤6](#li0498111464411)，完成对推流域名的CNAME配置。
 
 ## 验证CNAME是否生效<a name="section131811259171017"></a>
 
-配置CNAME后，不同的DNS服务商CNAME生效的时间也不同，您可以通过以下方式验证CNAME是否生效。
-
-打开Windows操作系统中的cmd程序，输入如下指令：
+您可以通过“nslookup“命令来查询CNAME是否生效。打开Windows操作系统中的cmd程序，输入如下命令：
 
 ```
 nslookup -qt=cname 加速域名
