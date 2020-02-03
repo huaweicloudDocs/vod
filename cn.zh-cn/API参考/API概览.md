@@ -152,6 +152,16 @@
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1452516367231"><a name="p1452516367231"></a><a name="p1452516367231"></a><a href="视频处理.md">视频处理</a></p>
 </td>
 </tr>
+<tr id="row8673163872920"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p567473852918"><a name="p567473852918"></a><a name="p567473852918"></a><span id="ph2690194092919"><a name="ph2690194092919"></a><a name="ph2690194092919"></a>DELETE /v1.0/{project_id}/asset/process</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p8674738102920"><a name="p8674738102920"></a><a name="p8674738102920"></a><a href="取消媒资转码任务.md">取消媒资转码任务</a></p>
+</td>
+</tr>
+<tr id="row18864117163014"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p16864141714309"><a name="p16864141714309"></a><a name="p16864141714309"></a><span id="ph4617163053016"><a name="ph4617163053016"></a><a name="ph4617163053016"></a>DELETE /v1.0/{project_id}/asset/extract_audio</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1386481763010"><a name="p1386481763010"></a><a name="p1386481763010"></a><a href="取消提取音频任务.md">取消提取音频任务</a></p>
+</td>
+</tr>
 <tr id="row98566072317"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p16856504230"><a name="p16856504230"></a><a name="p16856504230"></a>POST /v1.0/{project_id}/asset/concat</p>
 </td>
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1252273613235"><a name="p1252273613235"></a><a name="p1252273613235"></a><a href="视频拼接.md">视频拼接</a></p>
