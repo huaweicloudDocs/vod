@@ -71,7 +71,7 @@
     <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p191215507322"><a name="zh-cn_topic_0117188957_p191215507322"></a><a name="zh-cn_topic_0117188957_p191215507322"></a>选择“CNAME-将域名指向另外一个域名”。</p>
     </td>
     </tr>
-    <tr id="row170145193715"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p41125123715"><a name="p41125123715"></a><a name="p41125123715"></a>别名<a href="https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0010.html" target="_blank" rel="noopener noreferrer">解析线路</a></p>
+    <tr id="row170145193715"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p41125123715"><a name="p41125123715"></a><a name="p41125123715"></a>别名</p>
     </td>
     <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="p148333013716"><a name="p148333013716"></a><a name="p148333013716"></a>用于是否将此记录集关联至云服务资源实例。</p>
     <a name="ul14834306376"></a><a name="ul14834306376"></a><ul id="ul14834306376"><li>是：为此记录集关联云服务资源实例，详细说明请参见<a href="https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0017.html" target="_blank" rel="noopener noreferrer">设置记录集别名</a>。</li><li>否：不为此记录集关联云服务资源实例。</li></ul>

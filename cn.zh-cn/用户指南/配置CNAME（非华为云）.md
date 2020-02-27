@@ -32,7 +32,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p185071046183018"><a name="zh-cn_topic_0117188957_p185071046183018"></a><a name="zh-cn_topic_0117188957_p185071046183018"></a>主机记录指域名前缀。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p1950744620308"><a name="zh-cn_topic_0117188957_p1950744620308"></a><a name="zh-cn_topic_0117188957_p1950744620308"></a><span id="ph967234274416"><a name="ph967234274416"></a><a name="ph967234274416"></a>example</span></p>
+    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p1950744620308"><a name="zh-cn_topic_0117188957_p1950744620308"></a><a name="zh-cn_topic_0117188957_p1950744620308"></a>example</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row15507194610301"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p2050764610303"><a name="zh-cn_topic_0117188957_p2050764610303"></a><a name="zh-cn_topic_0117188957_p2050764610303"></a>记录类型</p>
@@ -53,7 +53,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p175071646133010"><a name="zh-cn_topic_0117188957_p175071646133010"></a><a name="zh-cn_topic_0117188957_p175071646133010"></a>需指向的域名，即CDN为您分配的CNAME域名。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p145078463308"><a name="zh-cn_topic_0117188957_p145078463308"></a><a name="zh-cn_topic_0117188957_p145078463308"></a><span id="ph336653614444"><a name="ph336653614444"></a><a name="ph336653614444"></a>example</span>.test.com.c.cdnhwc1.com</p>
+    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p145078463308"><a name="zh-cn_topic_0117188957_p145078463308"></a><a name="zh-cn_topic_0117188957_p145078463308"></a>example.test.com.c.cdnhwc1.com</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row10507946103013"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p115071346143010"><a name="zh-cn_topic_0117188957_p115071346143010"></a><a name="zh-cn_topic_0117188957_p115071346143010"></a>权重</p>
@@ -118,7 +118,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p147311120194514"><a name="zh-cn_topic_0117188957_p147311120194514"></a><a name="zh-cn_topic_0117188957_p147311120194514"></a>主机记录指域名前缀。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p973182024511"><a name="zh-cn_topic_0117188957_p973182024511"></a><a name="zh-cn_topic_0117188957_p973182024511"></a><span id="ph1234214674516"><a name="ph1234214674516"></a><a name="ph1234214674516"></a>example</span></p>
+    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p973182024511"><a name="zh-cn_topic_0117188957_p973182024511"></a><a name="zh-cn_topic_0117188957_p973182024511"></a>example</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row4731162054515"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p117311020104519"><a name="zh-cn_topic_0117188957_p117311020104519"></a><a name="zh-cn_topic_0117188957_p117311020104519"></a>解析线路</p>
@@ -132,7 +132,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p19731162011458"><a name="zh-cn_topic_0117188957_p19731162011458"></a><a name="zh-cn_topic_0117188957_p19731162011458"></a>需指向的域名，即CDN为您分配的CNAME域名。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p5731620114514"><a name="zh-cn_topic_0117188957_p5731620114514"></a><a name="zh-cn_topic_0117188957_p5731620114514"></a><span id="ph17957168164510"><a name="ph17957168164510"></a><a name="ph17957168164510"></a>example</span>.test.com.c.cdnhwc1.com</p>
+    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p5731620114514"><a name="zh-cn_topic_0117188957_p5731620114514"></a><a name="zh-cn_topic_0117188957_p5731620114514"></a>example.test.com.c.cdnhwc1.com</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row1273112020452"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p27311720194516"><a name="zh-cn_topic_0117188957_p27311720194516"></a><a name="zh-cn_topic_0117188957_p27311720194516"></a>TTL(秒)</p>
@@ -175,14 +175,14 @@
     </td>
     <td class="cellrowborder" valign="top" width="52%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p4512164913310"><a name="zh-cn_topic_0117188957_p4512164913310"></a><a name="zh-cn_topic_0117188957_p4512164913310"></a>需指向的域名，即CDN为您分配的CNAME域名。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p185121849123316"><a name="zh-cn_topic_0117188957_p185121849123316"></a><a name="zh-cn_topic_0117188957_p185121849123316"></a><span id="ph17807236174514"><a name="ph17807236174514"></a><a name="ph17807236174514"></a>example</span>.test.com.c.cdnhwc1.com</p>
+    <td class="cellrowborder" valign="top" width="33%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p185121849123316"><a name="zh-cn_topic_0117188957_p185121849123316"></a><a name="zh-cn_topic_0117188957_p185121849123316"></a>example.test.com.c.cdnhwc1.com</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row2512349173315"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p195126495336"><a name="zh-cn_topic_0117188957_p195126495336"></a><a name="zh-cn_topic_0117188957_p195126495336"></a>别名主机</p>
     </td>
     <td class="cellrowborder" valign="top" width="52%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p1651244973314"><a name="zh-cn_topic_0117188957_p1651244973314"></a><a name="zh-cn_topic_0117188957_p1651244973314"></a>表示域名前缀。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p1151219491334"><a name="zh-cn_topic_0117188957_p1151219491334"></a><a name="zh-cn_topic_0117188957_p1151219491334"></a><span id="ph1292663474516"><a name="ph1292663474516"></a><a name="ph1292663474516"></a>example</span></p>
+    <td class="cellrowborder" valign="top" width="33%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p1151219491334"><a name="zh-cn_topic_0117188957_p1151219491334"></a><a name="zh-cn_topic_0117188957_p1151219491334"></a>example</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row451254918330"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p651614919338"><a name="zh-cn_topic_0117188957_p651614919338"></a><a name="zh-cn_topic_0117188957_p651614919338"></a>TTL（秒）</p>
