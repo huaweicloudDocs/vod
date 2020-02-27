@@ -1,4 +1,4 @@
-# 指定媒资ID预热<a name="zh-cn_topic_0145105867"></a>
+# 指定媒资ID预热<a name="vod_04_0205"></a>
 
 ## 功能描述<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section114814192538"></a>
 
@@ -45,7 +45,27 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/preheating
 
 ## 返回参数<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section162761640105314"></a>
 
--   **处理成功时返回无返回参数**
+-   **处理成功时返回参数**
+
+    <a name="table264515405256"></a>
+    <table><thead align="left"><tr id="row126457406259"><th class="cellrowborder" valign="top" width="20%" id="mcps1.1.4.1.1"><p id="p11645194042512"><a name="p11645194042512"></a><a name="p11645194042512"></a>参数</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="20%" id="mcps1.1.4.1.2"><p id="p564574052514"><a name="p564574052514"></a><a name="p564574052514"></a>类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="60%" id="mcps1.1.4.1.3"><p id="p9645194002519"><a name="p9645194002519"></a><a name="p9645194002519"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row1266064019252"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p20660144092516"><a name="p20660144092516"></a><a name="p20660144092516"></a>task_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.2 "><p id="p15739959201617"><a name="p15739959201617"></a><a name="p15739959201617"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.1.4.1.3 "><p id="p10660124082518"><a name="p10660124082518"></a><a name="p10660124082518"></a>预热任务ID。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
 -   **处理失败时返回**
 
     **表 2**  处理失败返回参数
@@ -80,6 +100,13 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/preheating
 ## 返回样例<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section1164111461532"></a>
 
 -   处理成功返回（202 Accepted）
+
+    ```
+    {
+       "task_id": "5199337c31c8e4622f1590735b13a263"  
+    }
+    ```
+
 -   处理失败返回（400 Bad Request\)
 
     ```

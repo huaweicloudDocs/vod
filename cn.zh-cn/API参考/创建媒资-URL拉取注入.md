@@ -79,7 +79,8 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p8446154916596"><a name="p8446154916596"></a><a name="p8446154916596"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p144734918594"><a name="p144734918594"></a><a name="p144734918594"></a>媒资分类id。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p49483440"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p49483440"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p49483440"></a>媒资分类ID。</p>
+<p id="p1113582020331"><a name="p1113582020331"></a><a name="p1113582020331"></a>若不为空，则可以将上传的音视频归类到指定分类中，您可以在视频点播控制台配置分类，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod010006.html" target="_blank" rel="noopener noreferrer">分类设置</a>。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p644712496592"><a name="p644712496592"></a><a name="p644712496592"></a>O</p>
 </td>
@@ -120,13 +121,26 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p17448349155918"><a name="p17448349155918"></a><a name="p17448349155918"></a>O</p>
 </td>
 </tr>
-<tr id="row184801791009"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p84811791503"><a name="p84811791503"></a><a name="p84811791503"></a>template_group_name</p>
+<tr id="row184801791009"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p224314412295"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p224314412295"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p224314412295"></a>template_group_name</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p44812091501"><a name="p44812091501"></a><a name="p44812091501"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p5244194112915"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p5244194112915"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p5244194112915"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p877011341799"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p877011341799"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p877011341799"></a>转码模板组名称。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p282452216325"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p282452216325"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p282452216325"></a>转码模板组名称。</p>
+<p id="p2839171410302"><a name="p2839171410302"></a><a name="p2839171410302"></a>若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/zh-cn_topic_0128969719.html" target="_blank" rel="noopener noreferrer">转码设置</a>。</p>
+<div class="note" id="note1110033814382"><a name="note1110033814382"></a><a name="note1110033814382"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1610033819389"><a name="p1610033819389"></a><a name="p1610033819389"></a>若同时设置了<span class="parmname" id="parmname178471651153819"><a name="parmname178471651153819"></a><a name="parmname178471651153819"></a>“template_group_name”</span>和<span class="parmname" id="parmname1089414103915"><a name="parmname1089414103915"></a><a name="parmname1089414103915"></a>“workflow_name”</span>字段，则<span class="parmname" id="parmname5281229397"><a name="parmname5281229397"></a><a name="parmname5281229397"></a>“template_group_name”</span>字段生效。</p>
+</div></div>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p948269208"><a name="p948269208"></a><a name="p948269208"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1324417418295"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1324417418295"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1324417418295"></a>O</p>
+</td>
+</tr>
+<tr id="row4739172493714"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p14827123115351"><a name="p14827123115351"></a><a name="p14827123115351"></a>workflow_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p13709142911351"><a name="p13709142911351"></a><a name="p13709142911351"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p877510281322"><a name="p877510281322"></a><a name="p877510281322"></a>工作流名称。</p>
+<p id="p3873113319310"><a name="p3873113319310"></a><a name="p3873113319310"></a>若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod010041.html" target="_blank" rel="noopener noreferrer">工作流设置</a>。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p870922953518"><a name="p870922953518"></a><a name="p870922953518"></a>O</p>
 </td>
 </tr>
 <tr id="row924318148018"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p202441141704"><a name="p202441141704"></a><a name="p202441141704"></a>auto_encrypt</p>
@@ -166,91 +180,91 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 **表 3**  Thumbnail参数说明
 
 <a name="table22291146121512"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0129004451_row6236110565"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0129004451_p1523610566"><a name="zh-cn_topic_0129004451_p1523610566"></a><a name="zh-cn_topic_0129004451_p1523610566"></a>参数</p>
+<table><thead align="left"><tr id="vod_04_0196_row6236110565"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p1523610566"><a name="vod_04_0196_p1523610566"></a><a name="vod_04_0196_p1523610566"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0129004451_p62361501866"><a name="zh-cn_topic_0129004451_p62361501866"></a><a name="zh-cn_topic_0129004451_p62361501866"></a>类型</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="vod_04_0196_p62361501866"><a name="vod_04_0196_p62361501866"></a><a name="vod_04_0196_p62361501866"></a>类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0129004451_p17236100763"><a name="zh-cn_topic_0129004451_p17236100763"></a><a name="zh-cn_topic_0129004451_p17236100763"></a>说明</p>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.3"><p id="vod_04_0196_p17236100763"><a name="vod_04_0196_p17236100763"></a><a name="vod_04_0196_p17236100763"></a>说明</p>
 </th>
-<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0129004451_p142361406618"><a name="zh-cn_topic_0129004451_p142361406618"></a><a name="zh-cn_topic_0129004451_p142361406618"></a>必选项（M）/可选项（O）</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.4"><p id="vod_04_0196_p142361406618"><a name="vod_04_0196_p142361406618"></a><a name="vod_04_0196_p142361406618"></a>必选项（M）/可选项（O）</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0129004451_row423610366"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p123610966"><a name="zh-cn_topic_0129004451_p123610966"></a><a name="zh-cn_topic_0129004451_p123610966"></a>type</p>
+<tbody><tr id="vod_04_0196_row423610366"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p123610966"><a name="vod_04_0196_p123610966"></a><a name="vod_04_0196_p123610966"></a>type</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p15236150161"><a name="zh-cn_topic_0129004451_p15236150161"></a><a name="zh-cn_topic_0129004451_p15236150161"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p15236150161"><a name="vod_04_0196_p15236150161"></a><a name="vod_04_0196_p15236150161"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p102361502062"><a name="zh-cn_topic_0129004451_p102361502062"></a><a name="zh-cn_topic_0129004451_p102361502062"></a>截图类型。</p>
-<p id="zh-cn_topic_0129004451_p1832519442142"><a name="zh-cn_topic_0129004451_p1832519442142"></a><a name="zh-cn_topic_0129004451_p1832519442142"></a>取值如下：</p>
-<p id="zh-cn_topic_0129004451_p18201145463713"><a name="zh-cn_topic_0129004451_p18201145463713"></a><a name="zh-cn_topic_0129004451_p18201145463713"></a>time：每次进行截图的间隔时间。</p>
-<p id="zh-cn_topic_0129004451_p1951613492173"><a name="zh-cn_topic_0129004451_p1951613492173"></a><a name="zh-cn_topic_0129004451_p1951613492173"></a>dots : 按照指定的时间点截图。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p102361502062"><a name="vod_04_0196_p102361502062"></a><a name="vod_04_0196_p102361502062"></a>截图类型。</p>
+<p id="vod_04_0196_p1832519442142"><a name="vod_04_0196_p1832519442142"></a><a name="vod_04_0196_p1832519442142"></a>取值如下：</p>
+<p id="vod_04_0196_p18201145463713"><a name="vod_04_0196_p18201145463713"></a><a name="vod_04_0196_p18201145463713"></a>time：每次进行截图的间隔时间。</p>
+<p id="vod_04_0196_p1951613492173"><a name="vod_04_0196_p1951613492173"></a><a name="vod_04_0196_p1951613492173"></a>dots : 按照指定的时间点截图。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p162361300611"><a name="zh-cn_topic_0129004451_p162361300611"></a><a name="zh-cn_topic_0129004451_p162361300611"></a>M</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0129004451_row223650264"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p1023612013619"><a name="zh-cn_topic_0129004451_p1023612013619"></a><a name="zh-cn_topic_0129004451_p1023612013619"></a>time</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p123620669"><a name="zh-cn_topic_0129004451_p123620669"></a><a name="zh-cn_topic_0129004451_p123620669"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p19236600620"><a name="zh-cn_topic_0129004451_p19236600620"></a><a name="zh-cn_topic_0129004451_p19236600620"></a>生成截图的时间间隔值。</p>
-<p id="zh-cn_topic_0129004451_p19116144333617"><a name="zh-cn_topic_0129004451_p19116144333617"></a><a name="zh-cn_topic_0129004451_p19116144333617"></a>取值范围：[1,12]之间的整数。</p>
-<p id="zh-cn_topic_0129004451_p135114883713"><a name="zh-cn_topic_0129004451_p135114883713"></a><a name="zh-cn_topic_0129004451_p135114883713"></a>单位：秒</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p52365012614"><a name="zh-cn_topic_0129004451_p52365012614"></a><a name="zh-cn_topic_0129004451_p52365012614"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p162361300611"><a name="vod_04_0196_p162361300611"></a><a name="vod_04_0196_p162361300611"></a>M</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0129004451_row4236130163"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p1923617018618"><a name="zh-cn_topic_0129004451_p1923617018618"></a><a name="zh-cn_topic_0129004451_p1923617018618"></a>dots</p>
+<tr id="vod_04_0196_row223650264"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p1023612013619"><a name="vod_04_0196_p1023612013619"></a><a name="vod_04_0196_p1023612013619"></a>time</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p42361603616"><a name="zh-cn_topic_0129004451_p42361603616"></a><a name="zh-cn_topic_0129004451_p42361603616"></a>Array of integers</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p123620669"><a name="vod_04_0196_p123620669"></a><a name="vod_04_0196_p123620669"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p823619015619"><a name="zh-cn_topic_0129004451_p823619015619"></a><a name="zh-cn_topic_0129004451_p823619015619"></a>指定时间截图时的时间点数组。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p19236600620"><a name="vod_04_0196_p19236600620"></a><a name="vod_04_0196_p19236600620"></a>生成截图的时间间隔值。</p>
+<p id="vod_04_0196_p19116144333617"><a name="vod_04_0196_p19116144333617"></a><a name="vod_04_0196_p19116144333617"></a>取值范围：[1,12]之间的整数。</p>
+<p id="vod_04_0196_p135114883713"><a name="vod_04_0196_p135114883713"></a><a name="vod_04_0196_p135114883713"></a>单位：秒</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p112361101167"><a name="zh-cn_topic_0129004451_p112361101167"></a><a name="zh-cn_topic_0129004451_p112361101167"></a>O</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0129004451_row82368013616"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p42361019619"><a name="zh-cn_topic_0129004451_p42361019619"></a><a name="zh-cn_topic_0129004451_p42361019619"></a>cover_position</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p4236501968"><a name="zh-cn_topic_0129004451_p4236501968"></a><a name="zh-cn_topic_0129004451_p4236501968"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p127841362196"><a name="zh-cn_topic_0129004451_p127841362196"></a><a name="zh-cn_topic_0129004451_p127841362196"></a>指定第几张截图作为封面。</p>
-<p id="zh-cn_topic_0129004451_p72361603610"><a name="zh-cn_topic_0129004451_p72361603610"></a><a name="zh-cn_topic_0129004451_p72361603610"></a>默认值：1。</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p132362004611"><a name="zh-cn_topic_0129004451_p132362004611"></a><a name="zh-cn_topic_0129004451_p132362004611"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p52365012614"><a name="vod_04_0196_p52365012614"></a><a name="vod_04_0196_p52365012614"></a>O</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0129004451_row18236190165"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p192361302069"><a name="zh-cn_topic_0129004451_p192361302069"></a><a name="zh-cn_topic_0129004451_p192361302069"></a>format</p>
+<tr id="vod_04_0196_row4236130163"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p1923617018618"><a name="vod_04_0196_p1923617018618"></a><a name="vod_04_0196_p1923617018618"></a>dots</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p152361005619"><a name="zh-cn_topic_0129004451_p152361005619"></a><a name="zh-cn_topic_0129004451_p152361005619"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p42361603616"><a name="vod_04_0196_p42361603616"></a><a name="vod_04_0196_p42361603616"></a>Array of integers</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p2138182311812"><a name="zh-cn_topic_0129004451_p2138182311812"></a><a name="zh-cn_topic_0129004451_p2138182311812"></a>截图文件格式。</p>
-<p id="zh-cn_topic_0129004451_p91092284183"><a name="zh-cn_topic_0129004451_p91092284183"></a><a name="zh-cn_topic_0129004451_p91092284183"></a>取值如下：</p>
-<p id="zh-cn_topic_0129004451_p585515283820"><a name="zh-cn_topic_0129004451_p585515283820"></a><a name="zh-cn_topic_0129004451_p585515283820"></a>1：jpg。</p>
-<p id="zh-cn_topic_0129004451_p171262495303"><a name="zh-cn_topic_0129004451_p171262495303"></a><a name="zh-cn_topic_0129004451_p171262495303"></a>默认值：1 。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p823619015619"><a name="vod_04_0196_p823619015619"></a><a name="vod_04_0196_p823619015619"></a>指定时间截图时的时间点数组。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p15236706613"><a name="zh-cn_topic_0129004451_p15236706613"></a><a name="zh-cn_topic_0129004451_p15236706613"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p112361101167"><a name="vod_04_0196_p112361101167"></a><a name="vod_04_0196_p112361101167"></a>O</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0129004451_row18236180368"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p102361001265"><a name="zh-cn_topic_0129004451_p102361001265"></a><a name="zh-cn_topic_0129004451_p102361001265"></a>aspect_ratio</p>
+<tr id="vod_04_0196_row82368013616"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p42361019619"><a name="vod_04_0196_p42361019619"></a><a name="vod_04_0196_p42361019619"></a>cover_position</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p102361301565"><a name="zh-cn_topic_0129004451_p102361301565"></a><a name="zh-cn_topic_0129004451_p102361301565"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p4236501968"><a name="vod_04_0196_p4236501968"></a><a name="vod_04_0196_p4236501968"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p1921951017206"><a name="zh-cn_topic_0129004451_p1921951017206"></a><a name="zh-cn_topic_0129004451_p1921951017206"></a>纵横比，图像缩放方式。</p>
-<div class="p" id="zh-cn_topic_0129004451_p44711160201"><a name="zh-cn_topic_0129004451_p44711160201"></a><a name="zh-cn_topic_0129004451_p44711160201"></a>取值如下：<a name="zh-cn_topic_0129004451_ul1346182262015"></a><a name="zh-cn_topic_0129004451_ul1346182262015"></a><ul id="zh-cn_topic_0129004451_ul1346182262015"><li>0：自适应（保持原有宽高比）。</li><li>1：16:9。</li></ul>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p127841362196"><a name="vod_04_0196_p127841362196"></a><a name="vod_04_0196_p127841362196"></a>指定第几张截图作为封面。</p>
+<p id="vod_04_0196_p72361603610"><a name="vod_04_0196_p72361603610"></a><a name="vod_04_0196_p72361603610"></a>默认值：1。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p132362004611"><a name="vod_04_0196_p132362004611"></a><a name="vod_04_0196_p132362004611"></a>O</p>
+</td>
+</tr>
+<tr id="vod_04_0196_row18236190165"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p192361302069"><a name="vod_04_0196_p192361302069"></a><a name="vod_04_0196_p192361302069"></a>format</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p152361005619"><a name="vod_04_0196_p152361005619"></a><a name="vod_04_0196_p152361005619"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p2138182311812"><a name="vod_04_0196_p2138182311812"></a><a name="vod_04_0196_p2138182311812"></a>截图文件格式。</p>
+<p id="vod_04_0196_p91092284183"><a name="vod_04_0196_p91092284183"></a><a name="vod_04_0196_p91092284183"></a>取值如下：</p>
+<p id="vod_04_0196_p585515283820"><a name="vod_04_0196_p585515283820"></a><a name="vod_04_0196_p585515283820"></a>1：jpg。</p>
+<p id="vod_04_0196_p171262495303"><a name="vod_04_0196_p171262495303"></a><a name="vod_04_0196_p171262495303"></a>默认值：1 。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p15236706613"><a name="vod_04_0196_p15236706613"></a><a name="vod_04_0196_p15236706613"></a>O</p>
+</td>
+</tr>
+<tr id="vod_04_0196_row18236180368"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p102361001265"><a name="vod_04_0196_p102361001265"></a><a name="vod_04_0196_p102361001265"></a>aspect_ratio</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p102361301565"><a name="vod_04_0196_p102361301565"></a><a name="vod_04_0196_p102361301565"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p1921951017206"><a name="vod_04_0196_p1921951017206"></a><a name="vod_04_0196_p1921951017206"></a>纵横比，图像缩放方式。</p>
+<div class="p" id="vod_04_0196_p44711160201"><a name="vod_04_0196_p44711160201"></a><a name="vod_04_0196_p44711160201"></a>取值如下：<a name="vod_04_0196_ul1346182262015"></a><a name="vod_04_0196_ul1346182262015"></a><ul id="vod_04_0196_ul1346182262015"><li>0：自适应（保持原有宽高比）。</li><li>1：16:9。</li></ul>
 </div>
-<p id="zh-cn_topic_0129004451_p162361701364"><a name="zh-cn_topic_0129004451_p162361701364"></a><a name="zh-cn_topic_0129004451_p162361701364"></a>默认值：0。</p>
+<p id="vod_04_0196_p162361701364"><a name="vod_04_0196_p162361701364"></a><a name="vod_04_0196_p162361701364"></a>默认值：0。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p162369013614"><a name="zh-cn_topic_0129004451_p162369013614"></a><a name="zh-cn_topic_0129004451_p162369013614"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p162369013614"><a name="vod_04_0196_p162369013614"></a><a name="vod_04_0196_p162369013614"></a>O</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0129004451_row13236100968"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p192361401063"><a name="zh-cn_topic_0129004451_p192361401063"></a><a name="zh-cn_topic_0129004451_p192361401063"></a>max_length</p>
+<tr id="vod_04_0196_row13236100968"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p192361401063"><a name="vod_04_0196_p192361401063"></a><a name="vod_04_0196_p192361401063"></a>max_length</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p7236601562"><a name="zh-cn_topic_0129004451_p7236601562"></a><a name="zh-cn_topic_0129004451_p7236601562"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p7236601562"><a name="vod_04_0196_p7236601562"></a><a name="vod_04_0196_p7236601562"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p11940248211"><a name="zh-cn_topic_0129004451_p11940248211"></a><a name="zh-cn_topic_0129004451_p11940248211"></a>截图最长边的尺寸。</p>
-<p id="zh-cn_topic_0129004451_p88853118211"><a name="zh-cn_topic_0129004451_p88853118211"></a><a name="zh-cn_topic_0129004451_p88853118211"></a>单位：像素。</p>
-<p id="zh-cn_topic_0129004451_p42361601162"><a name="zh-cn_topic_0129004451_p42361601162"></a><a name="zh-cn_topic_0129004451_p42361601162"></a>宽边尺寸按照该尺寸与原始视频像素等比缩放计算。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p11940248211"><a name="vod_04_0196_p11940248211"></a><a name="vod_04_0196_p11940248211"></a>截图最长边的尺寸。</p>
+<p id="vod_04_0196_p88853118211"><a name="vod_04_0196_p88853118211"></a><a name="vod_04_0196_p88853118211"></a>单位：像素。</p>
+<p id="vod_04_0196_p42361601162"><a name="vod_04_0196_p42361601162"></a><a name="vod_04_0196_p42361601162"></a>宽边尺寸按照该尺寸与原始视频像素等比缩放计算。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p92361202067"><a name="zh-cn_topic_0129004451_p92361202067"></a><a name="zh-cn_topic_0129004451_p92361202067"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p92361202067"><a name="vod_04_0196_p92361202067"></a><a name="vod_04_0196_p92361202067"></a>O</p>
 </td>
 </tr>
 </tbody>
@@ -259,62 +273,24 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 **表 4**  Review参数说明
 
 <a name="table139381435171712"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0129004451_row124991151087"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0129004451_p449905788"><a name="zh-cn_topic_0129004451_p449905788"></a><a name="zh-cn_topic_0129004451_p449905788"></a>参数</p>
+<table><thead align="left"><tr id="vod_04_0196_row124991151087"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p449905788"><a name="vod_04_0196_p449905788"></a><a name="vod_04_0196_p449905788"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0129004451_p164992053815"><a name="zh-cn_topic_0129004451_p164992053815"></a><a name="zh-cn_topic_0129004451_p164992053815"></a>类型</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="vod_04_0196_p164992053815"><a name="vod_04_0196_p164992053815"></a><a name="vod_04_0196_p164992053815"></a>类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0129004451_p104992512816"><a name="zh-cn_topic_0129004451_p104992512816"></a><a name="zh-cn_topic_0129004451_p104992512816"></a>说明</p>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.3"><p id="vod_04_0196_p104992512816"><a name="vod_04_0196_p104992512816"></a><a name="vod_04_0196_p104992512816"></a>说明</p>
 </th>
-<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0129004451_p1352110103520"><a name="zh-cn_topic_0129004451_p1352110103520"></a><a name="zh-cn_topic_0129004451_p1352110103520"></a>必选项（M）/可选项（O）</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.4"><p id="vod_04_0196_p1352110103520"><a name="vod_04_0196_p1352110103520"></a><a name="vod_04_0196_p1352110103520"></a>必选项（M）/可选项（O）</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0129004451_row16499135989"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p249919516814"><a name="zh-cn_topic_0129004451_p249919516814"></a><a name="zh-cn_topic_0129004451_p249919516814"></a>interval</p>
+<tbody><tr id="vod_04_0196_row5846612121812"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p6846141218184"><a name="vod_04_0196_p6846141218184"></a><a name="vod_04_0196_p6846141218184"></a>template_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p1349915511816"><a name="zh-cn_topic_0129004451_p1349915511816"></a><a name="zh-cn_topic_0129004451_p1349915511816"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p16846112181812"><a name="vod_04_0196_p16846112181812"></a><a name="vod_04_0196_p16846112181812"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p94887566218"><a name="zh-cn_topic_0129004451_p94887566218"></a><a name="zh-cn_topic_0129004451_p94887566218"></a>截图的时间间隔。</p>
-<p id="zh-cn_topic_0129004451_p55759372210"><a name="zh-cn_topic_0129004451_p55759372210"></a><a name="zh-cn_topic_0129004451_p55759372210"></a>取值范围：5或10。</p>
-<p id="zh-cn_topic_0129004451_p13858102462216"><a name="zh-cn_topic_0129004451_p13858102462216"></a><a name="zh-cn_topic_0129004451_p13858102462216"></a>默认值：5</p>
-<p id="zh-cn_topic_0129004451_p184521346194517"><a name="zh-cn_topic_0129004451_p184521346194517"></a><a name="zh-cn_topic_0129004451_p184521346194517"></a>单位：秒。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p116163113286"><a name="vod_04_0196_p116163113286"></a><a name="vod_04_0196_p116163113286"></a>审核模板ID。</p>
+<p id="vod_04_0196_p484616121185"><a name="vod_04_0196_p484616121185"></a><a name="vod_04_0196_p484616121185"></a>若不为空，则使用指定的模板ID对上传的音视频进行审核，您可以在视频点播控制台配置审核模板，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html" target="_blank" rel="noopener noreferrer">审核设置</a>。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p134991750814"><a name="zh-cn_topic_0129004451_p134991750814"></a><a name="zh-cn_topic_0129004451_p134991750814"></a>O</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0129004451_row24992511819"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p1749917513814"><a name="zh-cn_topic_0129004451_p1749917513814"></a><a name="zh-cn_topic_0129004451_p1749917513814"></a>politics</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p8499352815"><a name="zh-cn_topic_0129004451_p8499352815"></a><a name="zh-cn_topic_0129004451_p8499352815"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p16205124216220"><a name="zh-cn_topic_0129004451_p16205124216220"></a><a name="zh-cn_topic_0129004451_p16205124216220"></a>进行政治人物检测时的置信度。</p>
-<p id="zh-cn_topic_0129004451_p1749910512816"><a name="zh-cn_topic_0129004451_p1749910512816"></a><a name="zh-cn_topic_0129004451_p1749910512816"></a>取值范围：[-1,100]之间的整数。</p>
-<div class="note" id="zh-cn_topic_0129004451_note1971311219236"><a name="zh-cn_topic_0129004451_note1971311219236"></a><a name="zh-cn_topic_0129004451_note1971311219236"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="zh-cn_topic_0129004451_ul1583016569291"></a><a name="zh-cn_topic_0129004451_ul1583016569291"></a><ul id="zh-cn_topic_0129004451_ul1583016569291"><li>未设置或设置为0时，表示不进行此项检测。</li><li>设置为-1 时，表示采用默认的置信度53。</li></ul>
-</div></div>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p04999518810"><a name="zh-cn_topic_0129004451_p04999518810"></a><a name="zh-cn_topic_0129004451_p04999518810"></a>O</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0129004451_row14991851089"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p184991451817"><a name="zh-cn_topic_0129004451_p184991451817"></a><a name="zh-cn_topic_0129004451_p184991451817"></a>terrorism</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p949912518818"><a name="zh-cn_topic_0129004451_p949912518818"></a><a name="zh-cn_topic_0129004451_p949912518818"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p6438183042414"><a name="zh-cn_topic_0129004451_p6438183042414"></a><a name="zh-cn_topic_0129004451_p6438183042414"></a>进行暴恐元素检测时的置信度。</p>
-<p id="zh-cn_topic_0129004451_p4513259818"><a name="zh-cn_topic_0129004451_p4513259818"></a><a name="zh-cn_topic_0129004451_p4513259818"></a>取值范围：为[-1,100]之间的整数。</p>
-<div class="note" id="zh-cn_topic_0129004451_note16415194202413"><a name="zh-cn_topic_0129004451_note16415194202413"></a><a name="zh-cn_topic_0129004451_note16415194202413"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="zh-cn_topic_0129004451_ul173821755123012"></a><a name="zh-cn_topic_0129004451_ul173821755123012"></a><ul id="zh-cn_topic_0129004451_ul173821755123012"><li>未设置或设置为0时，表示不进行此项检测。</li><li>设置为-1 时， 表示采用默认的置信度80。</li></ul>
-</div></div>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p1551314513811"><a name="zh-cn_topic_0129004451_p1551314513811"></a><a name="zh-cn_topic_0129004451_p1551314513811"></a>O</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0129004451_row105131955815"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0129004451_p951317510811"><a name="zh-cn_topic_0129004451_p951317510811"></a><a name="zh-cn_topic_0129004451_p951317510811"></a>porn</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0129004451_p651345585"><a name="zh-cn_topic_0129004451_p651345585"></a><a name="zh-cn_topic_0129004451_p651345585"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0129004451_p19720165911246"><a name="zh-cn_topic_0129004451_p19720165911246"></a><a name="zh-cn_topic_0129004451_p19720165911246"></a>进行涉黄内容检测时的置信度。</p>
-<p id="zh-cn_topic_0129004451_p551310515816"><a name="zh-cn_topic_0129004451_p551310515816"></a><a name="zh-cn_topic_0129004451_p551310515816"></a>取值范围：[-1,100]之间的整数。</p>
-<div class="note" id="zh-cn_topic_0129004451_note92221912122512"><a name="zh-cn_topic_0129004451_note92221912122512"></a><a name="zh-cn_topic_0129004451_note92221912122512"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="zh-cn_topic_0129004451_ul123338192252"></a><a name="zh-cn_topic_0129004451_ul123338192252"></a><ul id="zh-cn_topic_0129004451_ul123338192252"><li>未设置或设置为0时，表示不进行此项检测。</li><li>设置为-1 时， 表示采用默认的置信度80。</li></ul>
-</div></div>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0129004451_p95131853816"><a name="zh-cn_topic_0129004451_p95131853816"></a><a name="zh-cn_topic_0129004451_p95131853816"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p15846512101816"><a name="vod_04_0196_p15846512101816"></a><a name="vod_04_0196_p15846512101816"></a>O</p>
 </td>
 </tr>
 </tbody>

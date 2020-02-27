@@ -1,4 +1,4 @@
-# 获取项目ID<a name="zh-cn_topic_0171449878"></a>
+# 获取项目ID<a name="vod_04_0211"></a>
 
 在调用接口的时候，部分URL中需要填入项目ID，所以需要获取到项目ID。您可以通过以下两种方式获取项目ID。
 
@@ -20,7 +20,7 @@
 
 您还能通过调用[查询指定条件下的项目信息](https://support.huaweicloud.com/api-iam/zh-cn_topic_0057845625.html)API获取项目ID。
 
-获取项目ID的接口为“GET https://\{Endpoint\}/v3/projects/”，其中\{Endpoint\}为IAM的终端节点，可以从[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)获取。接口的认证鉴权请参见[认证鉴权](https://support.huaweicloud.com/api-vod/zh-cn_topic_0171436914.html)。
+获取项目ID的接口为“GET https://\{Endpoint\}/v3/projects/”，其中\{Endpoint\}为IAM的终端节点，可以从[地区和终端节点](使用前必读.md#section499212013211)获取。接口的认证鉴权请参见[认证鉴权](认证鉴权.md)。
 
 响应示例如下，其中projects下的“id”即为项目ID。
 
