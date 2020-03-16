@@ -18,7 +18,7 @@
 
 ## 调用API获取项目ID<a name="section5912143972911"></a>
 
-您还能通过调用[查询指定条件下的项目信息](https://support.huaweicloud.com/api-iam/zh-cn_topic_0057845625.html)API获取项目ID。
+您还能通过调用[查询指定条件下的项目信息](https://support.huaweicloud.com/api-iam/iam_06_0001.html)API获取项目ID。
 
 获取项目ID的接口为“GET https://\{Endpoint\}/v3/projects/”，其中\{Endpoint\}为IAM的终端节点，可以从[地区和终端节点](使用前必读.md#section499212013211)获取。接口的认证鉴权请参见[认证鉴权](认证鉴权.md)。
 
