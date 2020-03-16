@@ -5,7 +5,7 @@
 ## 注意事项<a name="zh-cn_topic_0117188957_section421012115244"></a>
 
 -   若您添加的域名是在华为云[域名注册服务](https://support.huaweicloud.com/domain/index.html)申请的，请参考[操作步骤](#section6663324202916)配置CNAME解析。
--   若您添加的域名是通过第三方域名注册商注册的，您可以先通过[创建公网域名](https://support.huaweicloud.com/usermanual-dns/zh-cn_topic_0035467702.html#section3)操作将域名添加至云解析服务。然后再执行[操作步骤](#section6663324202916)配置CNAME解析。您也可以参考[配置CNAME解析（非华为云）](配置CNAME（非华为云）.md)，在对应域名服务提供商处进行配置，如指导与实际配置不符，请以各自域名服务提供商的指导信息为准。
+-   若您添加的域名是通过第三方域名服务商注册的，您可以先通过[创建公网域名](https://support.huaweicloud.com/usermanual-dns/zh-cn_topic_0035467702.html#section3)操作将域名添加至云解析服务。然后再执行[操作步骤](#section6663324202916)配置CNAME解析。您也可以参考[配置CNAME解析（非华为云）](配置CNAME（非华为云）.md)，在对应域名服务提供商处进行配置，如指导与实际配置不符，请以各自域名服务提供商的指导信息为准。
 -   您需要分别对推流域名和播放域名进行CNAME配置。
 
 ## 操作步骤<a name="section6663324202916"></a>

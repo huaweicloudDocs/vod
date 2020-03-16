@@ -15,7 +15,7 @@
 -   启用该功能后，原始视频加速URL将无法播放，需要按规则生成合法的防盗链URL。
 -   若防盗链URL过期，或者签名不能通过，将无法播放视频，并返回“403 Forbidden”信息。
 -   加密算法ABC暂不支持HLS和DASH播放场景。
--   若需要关闭Key防盗链，请[提交工单](https://console.huaweicloud.com/ticket)申请。
+-   若需要关闭Key防盗链，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请。
 
 ## 配置步骤<a name="section8975140513"></a>
 
@@ -65,9 +65,9 @@
     </table>
 
 6.  单击“确定”，完成参数配置。
-7.  [提交工单](https://console.huaweicloud.com/ticket)申请审核，提交的信息需要包含配置的域名，及[表1](#table9974649519)中的信息。
+7.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请审核，提交的信息需要包含配置的域名，及[表1](#table9974649519)中的信息。
 
-    审核通过后Key防盗链功能才会生效。若修改了Key防盗链配置，需要重新提交工单审核。
+    审核通过后Key防盗链功能才会生效。若修改了Key防盗链配置，需要重新[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)审核。
 
 8.  验证Key防盗链生效是否生效。
 
