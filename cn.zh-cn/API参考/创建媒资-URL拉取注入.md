@@ -90,8 +90,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p844724995919"><a name="p844724995919"></a><a name="p844724995919"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"></a>拉取的音视频文件类型。</p>
-<div class="p" id="p1042719724118"><a name="p1042719724118"></a><a name="p1042719724118"></a>取值如下：<a name="ul0436102264110"></a><a name="ul0436102264110"></a><ul id="ul0436102264110"><li>视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV<p id="p178021622648"><a name="p178021622648"></a><a name="p178021622648"></a></p>
-</li><li>音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2</li></ul>
+<div class="p" id="p1042719724118"><a name="p1042719724118"></a><a name="p1042719724118"></a>取值如下：<a name="ul0436102264110"></a><a name="ul0436102264110"></a><ul id="ul0436102264110"><li>视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV</li><li>音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2</li></ul>
 </div>
 <p id="p151452038191311"><a name="p151452038191311"></a><a name="p151452038191311"></a>若上传格式为音频文件，则不支持转码，添加水印，添加字幕。</p>
 </td>
