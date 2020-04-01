@@ -12,9 +12,7 @@
 
 ## 前提条件<a name="section1483264620406"></a>
 
--   “VOD Guest”属于策略，请先在IAM控制台中开通基于策略的访问控制公测，开通方法请参见：[申请基于策略的访问控制公测](https://support.huaweicloud.com/usermanual-iam/iam_01_019.html)。
-
--   给用户组授权之前，请您了解用户组可以添加的VOD系统权限，并结合实际需求进行选择，VOD支持的系统权限，请参见：[VOD系统权限](https://support.huaweicloud.com/productdesc-vod/vod030006.html)。
+给用户组授权之前，请您了解用户组可以添加的VOD系统权限，并结合实际需求进行选择，VOD支持的系统权限，请参见：[VOD系统权限](https://support.huaweicloud.com/productdesc-vod/vod030006.html)。
 
 ## 示例流程<a name="section8161102163310"></a>
 
