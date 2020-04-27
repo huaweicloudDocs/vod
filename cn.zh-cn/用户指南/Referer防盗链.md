@@ -11,7 +11,7 @@ Referer防盗链是基于HTTP协议支持的Referer机制实现的，通过播�
 
 ## 配置步骤<a name="zh-cn_topic_0111450891_section6349446803"></a>
 
-1.  登录[视频点播控制台](视频点播控制台https://console.huaweicloud.com/vod)。
+1.  登录[视频点播控制台](https://console.huaweicloud.com/vod)。
 2.  在左侧导航栏选择“域名管理”，进入域名管理界面。
 3.  单击域名右侧“配置 ”，选择“防盗链配置”页签。
 4.  单击“Referer防盗链“。弹出“配置Referer防盗链“页面。

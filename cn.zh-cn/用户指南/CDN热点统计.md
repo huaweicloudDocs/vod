@@ -13,7 +13,7 @@
 
 ## 查询步骤<a name="section12170116113116"></a>
 
-1.  登录[视频点播控制台](视频点播控制台https://console.huaweicloud.com/vod)。
+1.  登录[视频点播控制台](https://console.huaweicloud.com/vod)。
 2.  在左侧导航栏选择“统计分析 \> CDN热点统计”，进入CDN热点统计页面。
 3.  选择需要查询的域名及时间段（昨天或自定义），查看单音视频播放次数TOP100的数据。
 

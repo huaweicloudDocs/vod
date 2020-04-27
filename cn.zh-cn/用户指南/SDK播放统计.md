@@ -14,7 +14,7 @@
 
 ## 查询步骤<a name="section138316371842"></a>
 
-1.  登录[视频点播控制台](视频点播控制台https://console.huaweicloud.com/vod)。
+1.  登录[视频点播控制台](https://console.huaweicloud.com/vod)。
 2.  在左侧导航栏选择“统计分析 \> SDK播放统计”，进入SDK播放统计页面。
 3.  选择“域名维度”或“媒资维度”查看对应的播放统计数据。
 

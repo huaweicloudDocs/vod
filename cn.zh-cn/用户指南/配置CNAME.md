@@ -6,41 +6,26 @@
 
 -   若您添加的域名是在华为云[域名注册服务](https://support.huaweicloud.com/domain/index.html)申请的，请参考[操作步骤](#section6663324202916)配置CNAME解析。
 -   若您添加的域名是通过第三方域名服务商注册的，您可以先通过[创建公网域名](https://support.huaweicloud.com/usermanual-dns/zh-cn_topic_0035467702.html#section3)操作将域名添加至云解析服务。然后再执行[操作步骤](#section6663324202916)配置CNAME解析。您也可以参考[配置CNAME解析（非华为云）](配置CNAME（非华为云）.md)，在对应域名服务提供商处进行配置，如指导与实际配置不符，请以各自域名服务提供商的指导信息为准。
--   您需要分别对推流域名和播放域名进行CNAME配置。
 
 ## 操作步骤<a name="section6663324202916"></a>
 
-下面以播放域名为例，推流域名的CNAME配置步骤相同。
-
 1.  <a name="li184701358115720"></a>获取域名对应的CNAME值。
-    1.  登录[视频直播控制台](视频直播控制台https://console.huaweicloud.com/live)，在左侧导航树中选择“域名管理 ”，进入域名管理页面。
-    2.  在已添加的播放域名行单击“管理”，进入基本信息页面。
+    1.  登录[视频点播控制台](https://console.huaweicloud.com/vod)，在左侧导航树中选择“域名管理“，进入域名管理页。
+    2.  在所需域名行获取对应的CNAME 。
 
-        在基本信息页面获取播放域名的CNAME。
-
-        **图 1**  播放地址<a name="fig199493611582"></a>  
-        ![](figures/播放地址.png "播放地址")
-
-        以“test-play.example.com“为例，获得对应的CNAME为“test-play.example.com.w.hwcloudlive.com“。
-
-    3.  登录[视频点播控制台](视频点播控制台https://console.huaweicloud.com/vod)，在左侧导航树中选择“域名管理“，进入域名管理页。
-    4.  在所需域名行获取对应的CNAME 。
-
-        **图 2**  获取CNAME值<a name="fig058414430588"></a>  
+        **图 1**  获取CNAME值<a name="fig058414430588"></a>  
         ![](figures/获取CNAME值.png "获取CNAME值")
 
 2.  登录[云解析服务](https://console.huaweicloud.com/dns)控制台。
 3.  在左侧导航中，选择“域名解析 \> 公网解析“，进入域名列表页面。
 4.  在需要配置解析的域名行，单击“域名“列的域名名称。
 
-    以域名“example.com”为例，找到对应的"example.com"域名行。
-
-    **图 3**  域名列表<a name="fig8360253165811"></a>  
+    **图 2**  域名列表<a name="fig8360253165811"></a>  
     ![](figures/域名列表.png "域名列表")
 
 5.  在页面右上角单击“添加记录集“。
 
-    **图 4**  添加记录集<a name="fig899211345914"></a>  
+    **图 3**  添加记录集<a name="fig899211345914"></a>  
     ![](figures/添加记录集.png "添加记录集")
 
     根据界面提示填写参数配置，参数信息如[表1](#zh-cn_topic_0117188957_table18772105019323)所示。
@@ -60,8 +45,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="p10821175620454"><a name="p10821175620454"></a><a name="p10821175620454"></a>输入域名的二级域名（后缀无需用户手动填写）。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p14551715184910"><a name="p14551715184910"></a><a name="p14551715184910"></a>以播放域名“test-play.example.com”为例，此处输入“test-play”。</p>
-    <p id="p104271852204715"><a name="p104271852204715"></a><a name="p104271852204715"></a>以域名“test-play.example.com”为例，此处输入“test-play”。</p>
+    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p104271852204715"><a name="p104271852204715"></a><a name="p104271852204715"></a>以域名“test-play.example.com”为例，此处输入“test-play”。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row17912125016326"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p791245012328"><a name="zh-cn_topic_0117188957_p791245012328"></a><a name="zh-cn_topic_0117188957_p791245012328"></a>类型</p>
@@ -100,8 +84,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p1491219505324"><a name="zh-cn_topic_0117188957_p1491219505324"></a><a name="zh-cn_topic_0117188957_p1491219505324"></a>需指向的域名，即<a href="#li184701358115720">步骤1</a>获取的CNAME。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p62541540104520"><a name="p62541540104520"></a><a name="p62541540104520"></a>以播放域名“test-play.example.com”为例，此处输入<span class="parmvalue" id="parmvalue196656194612"><a name="parmvalue196656194612"></a><a name="parmvalue196656194612"></a>“test-play.example.com.w.hwcloudlive.com”</span>。</p>
-    <p id="p618705355418"><a name="p618705355418"></a><a name="p618705355418"></a>以域名“test-play.example.com”为例，此处输入“test-play.example.com.c.cdnhwc1.com”。</p>
+    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p618705355418"><a name="p618705355418"></a><a name="p618705355418"></a>以域名“test-play.example.com”为例，此处输入“test-play.example.com.c.cdnhwc1.com”。</p>
     </td>
     </tr>
     <tr id="row19122133853010"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p64191365312"><a name="p64191365312"></a><a name="p64191365312"></a>权重</p>
@@ -132,11 +115,10 @@
     </tbody>
     </table>
 
-6.  <a name="li0498111464411"></a>单击“确定“，完成添加。
+6.  单击“确定“，完成添加。
 
     您可以在域名对应的记录集列表中查看添加的记录集。当记录集的状态显示为“正常”时，表示记录集添加成功。
 
-7.  执行[步骤1](#li184701358115720)-[步骤6](#li0498111464411)，完成对推流域名的CNAME配置。
 
 ## 验证CNAME是否生效<a name="section131811259171017"></a>
 
@@ -148,6 +130,6 @@ nslookup -qt=cname 加速域名
 
 如果回显CNAME，则表示CNAME配置已经生效，如下图：
 
-**图 5**  CNAME生效验证<a name="fig1929782920556"></a>  
+**图 4**  CNAME生效验证<a name="fig1929782920556"></a>  
 ![](figures/CNAME生效验证.png "CNAME生效验证")
 

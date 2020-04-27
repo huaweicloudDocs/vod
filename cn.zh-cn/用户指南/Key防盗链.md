@@ -4,7 +4,7 @@
 
 ## 实现原理<a name="section81121143172618"></a>
 
-在控制配置Key防盗链功能后，点播服务会将配置的密钥值等信息同步到CDN节点中。用户请求点播资源的流程如下所示：
+在控制台配置Key防盗链功能后，点播服务会将配置的密钥值等信息同步到CDN节点中。用户请求点播资源的流程如下所示：
 
 1.  观众通过提供的鉴权播放URL向CDN请求视频播放。
 2.  CDN根据播放URL中携带的鉴权信息校验请求的合法性，仅校验通过的请求会被允许。
@@ -15,11 +15,11 @@
 -   启用该功能后，原始视频加速URL将无法播放，需要按规则生成合法的防盗链URL。
 -   若防盗链URL过期，或者签名不能通过，将无法播放视频，并返回“403 Forbidden”信息。
 -   加密算法ABC暂不支持HLS和DASH播放场景。
--   若需要关闭Key防盗链，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请。
+-   若需要关闭Key防盗链，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请。
 
 ## 配置步骤<a name="section8975140513"></a>
 
-1.  登录[视频点播控制台](视频点播控制台https://console.huaweicloud.com/vod)。
+1.  登录[视频点播控制台](https://console.huaweicloud.com/vod)。
 2.  在左侧导航栏选择“域名管理”，进入域名管理界面。
 3.  单击域名右侧“配置 ”，选择“防盗链”页签。
 4.  单击“Key防盗链”板块，打开“防盗链开关”。
@@ -56,7 +56,9 @@
     </tr>
     <tr id="row0974147514"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p097410411520"><a name="p097410411520"></a><a name="p097410411520"></a>算法</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p5974641653"><a name="p5974641653"></a><a name="p5974641653"></a>Key值加密算法，有ABCD四种算法，默认为算法D（安全的对称加密算法）。</p>
+    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p5974641653"><a name="p5974641653"></a><a name="p5974641653"></a>Key值加密算法，支持如下四种算法：</p>
+    <p id="p1626022133716"><a name="p1626022133716"></a><a name="p1626022133716"></a>ABC算法：采用MD5信息摘要算法，具体实现方法请参见<a href="#section152233717511">加密算法A</a>、<a href="#section20253496273">加密算法B</a>和<a href="#section1121142971020">加密算法C</a>。</p>
+    <p id="p684353118379"><a name="p684353118379"></a><a name="p684353118379"></a>D算法：采用对称加密算法，具体实现方法请参见<a href="#section9966544143317">加密算法D</a>。</p>
     <div class="note" id="note840115352011"><a name="note840115352011"></a><a name="note840115352011"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p164011235803"><a name="p164011235803"></a><a name="p164011235803"></a>算法ABC暂不支持HLS和DASH播放场景，建议使用算法D。</p>
     </div></div>
     </td>
@@ -65,9 +67,9 @@
     </table>
 
 6.  单击“确定”，完成参数配置。
-7.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请审核，提交的信息需要包含配置的域名，及[表1](#table9974649519)中的信息。
+7.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请审核，提交的信息需要包含配置的域名，及[表1](#table9974649519)中的信息。
 
-    审核通过后Key防盗链功能才会生效。若修改了Key防盗链配置，需要重新[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)审核。
+    审核通过后Key防盗链功能才会生效。若修改了Key防盗链配置，需要重新[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)审核。
 
 8.  验证Key防盗链生效是否生效。
 

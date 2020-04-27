@@ -7,7 +7,7 @@
 
 ## 注意事项<a name="section17310205154912"></a>
 
--   加密任务必须和转码任务合在一起进行。因此，HLS加密将会产生视频转码费用，具体请参考[价格说明](https://support.huaweicloud.com/price-vod/vod070001.html)。
+-   加密任务必须和转码任务合在一起进行。因此，HLS加密将会产生视频转码费用，具体请参考[价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/vod)。
 -   加密不会对原始上传的视频进行，只针对转码输出的HLS流加密，若转码的输出为MP4、DASH等其他类型，则不支持加密。
 -   加密、解密均依照HLS规范进行，只有支持播放HLS流的播放器才能播放。
 -   修改了获取密钥URL，需要对已加密的视频进行重新转码加密，否则新的加密密钥无法应用到视频中。
@@ -18,7 +18,7 @@
 
 ## 操作步骤<a name="section0330184613346"></a>
 
-1.  登录[视频点播控制台](视频点播控制台https://console.huaweicloud.com/vod)。
+1.  登录[视频点播控制台](https://console.huaweicloud.com/vod)。
 2.  在左侧导航栏选择“全局设置  \>  安全设置“，进入安全设置页面
 3.  单击“HLS加密设置”，弹出“加密设置”界面，输入“获取密钥URL“，如[图1](#fig53996414018)所示。
 

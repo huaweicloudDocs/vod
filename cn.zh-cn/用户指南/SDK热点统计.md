@@ -13,7 +13,7 @@
 
 ## 查询步骤<a name="section7137131814339"></a>
 
-1.  登录[视频点播控制台](视频点播控制台https://console.huaweicloud.com/vod)。
+1.  登录[视频点播控制台](https://console.huaweicloud.com/vod)。
 2.  在左侧导航栏选择“统计分析 \> SDK热点统计”，进入SDK热点统计页面。
 3.  选择需要查询的域名及时间段（昨天或自定义），查看音视频播放次数TOP1000的数据。
 
