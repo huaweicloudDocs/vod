@@ -241,21 +241,6 @@
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1545416246297"><a name="p1545416246297"></a><a name="p1545416246297"></a><a href="查询TopN媒资信息.md">查询TopN视频信息</a></p>
 </td>
 </tr>
-<tr id="row19421028102415"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1694282852413"><a name="p1694282852413"></a><a name="p1694282852413"></a>GET /v1.0/{domain_id}/vod/statistics/summary</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p294218285244"><a name="p294218285244"></a><a name="p294218285244"></a><a href="查询总体播放数据.md">查询总体播放数据</a></p>
-</td>
-</tr>
-<tr id="row0154438202418"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1015403852411"><a name="p1015403852411"></a><a name="p1015403852411"></a>GET /v1.0/{domain_id}/vod/<span>statistics/asset</span></p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p191541838122416"><a name="p191541838122416"></a><a name="p191541838122416"></a><a href="查询单媒资的播放数据.md">查询单媒资的播放数据</a></p>
-</td>
-</tr>
-<tr id="row159902332246"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p699103310244"><a name="p699103310244"></a><a name="p699103310244"></a>GET /v1.0/{domain_id}/vod/<span>statistics/top_url</span></p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p169919336241"><a name="p169919336241"></a><a name="p169919336241"></a><a href="查询Top1000媒资信息.md">查询Top1000媒资信息</a></p>
-</td>
-</tr>
 </tbody>
 </table>
 
