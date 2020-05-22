@@ -1,12 +1,16 @@
 # 创建媒资：OBS托管方式<a name="vod_04_0051"></a>
 
-## 功能描述<a name="section11101332175018"></a>
+## 功能介绍<a name="section11101332175018"></a>
 
 通过存量托管的方式，将已存储在OBS桶中的音视频文件同步到点播服务。
 
 OBS托管方式分为增量托管和存量托管，增量托管暂只支持通过视频点播控制台配置，配置后，若OBS有新增音视频文件，则会自动同步到点播服务中，具体请参见[增量托管](https://support.huaweicloud.com/usermanual-vod/vod010032.html)。两个托管方式都需要先将对应的OBS桶授权给点播服务，具体请参见[桶授权](https://support.huaweicloud.com/usermanual-vod/vod010031.html)。
 
-## 请求URI<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section5627230172812"></a>
+## 调试<a name="section189092186114"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=createTakeOverTask)中直接运行调试该接口。
+
+## URI<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section5627230172812"></a>
 
 POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 
@@ -106,7 +110,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 </tbody>
 </table>
 
-## 请求样例<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section126831744152813"></a>
+## 请求示例<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section126831744152813"></a>
 
 ```
 {
@@ -176,7 +180,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
     </table>
 
 
-## 返回样例<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section175034214305"></a>
+## 返回示例<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section175034214305"></a>
 
 -   处理成功返回（200 OK）
 

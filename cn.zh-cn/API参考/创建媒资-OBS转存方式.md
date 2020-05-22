@@ -1,12 +1,16 @@
 # 创建媒资：OBS转存方式<a name="vod_04_0201"></a>
 
-## 功能描述<a name="section157020365410"></a>
+## 功能介绍<a name="section157020365410"></a>
 
 若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。不同区域的云服务不能互连，所以待转存的OBS桶和点播服务必须在同一区域，如“华北-北京四”OBS桶中的音视频只能转存到“华北-北京四”点播服务中。
 
 ![](figures/OBS转存流程图新.png)
 
-## 请求URI<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section5627230172812"></a>
+## 调试<a name="section1696492974310"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=publishAssetFromObs)中直接运行调试该接口。
+
+## URI<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section5627230172812"></a>
 
 POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 
@@ -315,7 +319,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </tbody>
 </table>
 
-## 请求样例<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section126831744152813"></a>
+## 请求示例<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section126831744152813"></a>
 
 ```
 {
@@ -390,7 +394,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
     </table>
 
 
-## 返回样例<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section175034214305"></a>
+## 返回示例<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section175034214305"></a>
 
 -   处理成功返回（200 OK）
 

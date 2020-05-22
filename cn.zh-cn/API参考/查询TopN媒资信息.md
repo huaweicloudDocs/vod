@@ -1,10 +1,14 @@
 # 查询TopN媒资信息<a name="vod_04_0105"></a>
 
-## 功能描述<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section114814192538"></a>
+## 功能介绍<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section114814192538"></a>
 
 查询指定域名在指定日期播放次数排名Top 100的媒资统计数据。
 
-## 请求URI<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section5241024145313"></a>
+## 调试<a name="section16406630174316"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=queryTopStatistics)中直接运行调试该接口。
+
+## URI<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section5241024145313"></a>
 
 GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/top-statistics
 
@@ -47,7 +51,7 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/top-statistics
 </tbody>
 </table>
 
-## 请求样例<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section1249493515311"></a>
+## 请求示例<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section1249493515311"></a>
 
 ```
 GET /v1.0/{project_id}/asset/top-statistics?domain=ALL&date=20190612
@@ -160,7 +164,7 @@ GET /v1.0/{project_id}/asset/top-statistics?domain=ALL&date=20190612
     </table>
 
 
-## 返回样例<a name="section5664343618"></a>
+## 返回示例<a name="section5664343618"></a>
 
 -   处理成功时返回（200 OK）
 

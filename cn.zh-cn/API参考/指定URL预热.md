@@ -1,10 +1,14 @@
 # 指定URL预热<a name="vod_04_0119"></a>
 
-## 功能描述<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section114814192538"></a>
+## 功能介绍<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section114814192538"></a>
 
 媒资发布后，可通过指定媒资URL向CDN预热。用户初次请求时，将由CDN节点提供内容分发，加快用户下载缓存时间，提高用户体验。
 
-## 请求URI<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section5241024145313"></a>
+## 调试<a name="section342173282111"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=preheatingAsset)中直接运行调试该接口。
+
+## URI<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section5241024145313"></a>
 
 POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/preheating
 
@@ -35,7 +39,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/preheating
 </tbody>
 </table>
 
-## 请求样例<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section1249493515311"></a>
+## 请求示例<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section1249493515311"></a>
 
 ```
 {
@@ -103,7 +107,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/preheating
     </table>
 
 
-## 返回样例<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section1164111461532"></a>
+## 返回示例<a name="zh-cn_topic_0128109936_zh-cn_topic_0127939729_section1164111461532"></a>
 
 -   处理成功返回（202 Accepted）
 

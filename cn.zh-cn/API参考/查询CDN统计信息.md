@@ -1,10 +1,14 @@
 # 查询CDN统计信息<a name="vod_04_0103"></a>
 
-## 功能描述<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section114814192538"></a>
+## 功能介绍<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section114814192538"></a>
 
 查询CDN的统计数据，包括流量、峰值带宽、请求总数、请求命中率、流量命中率。
 
-## 请求URI<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section5241024145313"></a>
+## 调试<a name="section155331732184315"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=queryCdnStatistics)中直接运行调试该接口。
+
+## URI<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section5241024145313"></a>
 
 GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/cdn-statistics
 
@@ -82,7 +86,7 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/cdn-statistics
 </tbody>
 </table>
 
-## 请求样例<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section1249493515311"></a>
+## 请求示例<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section1249493515311"></a>
 
 ```
 GET /v1.0/{project_id}/asset/cdn-statistics?domain=www.example.com&stat_type=cdn_bw
@@ -159,7 +163,7 @@ GET /v1.0/{project_id}/asset/cdn-statistics?domain=www.example.com&stat_type=cdn
     </table>
 
 
-## 返回样例<a name="section1879952173615"></a>
+## 返回示例<a name="section1879952173615"></a>
 
 -   处理成功返回 （200 OK）
 

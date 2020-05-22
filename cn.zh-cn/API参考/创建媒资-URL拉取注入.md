@@ -1,10 +1,14 @@
 # 创建媒资：URL拉取注入<a name="vod_04_0052"></a>
 
-## 功能描述<a name="section4915145617137"></a>
+## 功能介绍<a name="section4915145617137"></a>
 
 基于音视频源文件URL，将音视频文件离线拉取上传到点播服务。
 
-## 请求URI<a name="section1267575319524"></a>
+## 调试<a name="section8345114810114"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=uploadMetaDataByUrl)中直接运行调试该接口。
+
+## URI<a name="section1267575319524"></a>
 
 POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 
@@ -295,7 +299,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </tbody>
 </table>
 
-## 请求样例<a name="section16393758885"></a>
+## 请求示例<a name="section16393758885"></a>
 
 ```
 {
@@ -421,7 +425,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
     </table>
 
 
-## 返回样例<a name="section1394555193012"></a>
+## 返回示例<a name="section1394555193012"></a>
 
 -   处理成功返回（200 OK）
 
