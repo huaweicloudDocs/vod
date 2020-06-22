@@ -49,9 +49,9 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 </tr>
 <tr id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_row57482668"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p20952192314359"><a name="p20952192314359"></a><a name="p20952192314359"></a>suffix</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"></a>Array of Strings</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p2502122213217"><a name="p2502122213217"></a><a name="p2502122213217"></a>批量托管时的文件后缀名。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p2502122213217"><a name="p2502122213217"></a><a name="p2502122213217"></a>批量托管时的文件后缀名列表。不传或传空值时，表示托管所有音视频文件，不进行后缀名过滤。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p58315944"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p58315944"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p58315944"></a>O</p>
 </td>
@@ -93,7 +93,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p32161874"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p32161874"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p32161874"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p78541330203420"><a name="p78541330203420"></a><a name="p78541330203420"></a>输出桶名。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p78541330203420"><a name="p78541330203420"></a><a name="p78541330203420"></a>输出桶名，host_type为1时必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p48206417"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p48206417"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p48206417"></a>O</p>
 </td>
@@ -102,7 +102,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p1206984582"><a name="p1206984582"></a><a name="p1206984582"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1876611289324"><a name="p1876611289324"></a><a name="p1876611289324"></a>输出路径名。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1876611289324"><a name="p1876611289324"></a><a name="p1876611289324"></a>输出路径名，host_type为1时必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p37890287"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p37890287"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p37890287"></a>O</p>
 </td>
@@ -143,7 +143,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
     </td>
     <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p1596382713413"><a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p1596382713413"></a><a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p1596382713413"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p04681454474"><a name="p04681454474"></a><a name="p04681454474"></a>任务Id。</p>
+    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p04681454474"><a name="p04681454474"></a><a name="p04681454474"></a>任务ID。</p>
     </td>
     </tr>
     </tbody>

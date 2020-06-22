@@ -54,7 +54,7 @@
 </tbody>
 </table>
 
-## CDN预热<a name="section893685092412"></a>
+## 媒资预热<a name="section893685092412"></a>
 
 <a name="table1966855842420"></a>
 <table><thead align="left"><tr id="row1564713245257"><th class="cellrowborder" valign="top" width="59.95%" id="mcps1.1.3.1.1"><p id="p166477248253"><a name="p166477248253"></a><a name="p166477248253"></a>接口</p>
@@ -65,12 +65,7 @@
 </thead>
 <tbody><tr id="row966825818243"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p866955882410"><a name="p866955882410"></a><a name="p866955882410"></a>POST /v1.0/{project_id}/asset/preheating</p>
 </td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1734115200266"><a name="p1734115200266"></a><a name="p1734115200266"></a><a href="指定媒资ID预热.md">指定媒资ID预热</a></p>
-</td>
-</tr>
-<tr id="row10853141114261"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p68533118264"><a name="p68533118264"></a><a name="p68533118264"></a>POST /v1.0/{project_id}/asset/preheating</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p78534113267"><a name="p78534113267"></a><a name="p78534113267"></a><a href="指定URL预热.md">指定URL预热</a></p>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p185497171851"><a name="p185497171851"></a><a name="p185497171851"></a><a href="媒资预热.md">媒资预热</a></p>
 </td>
 </tr>
 <tr id="row3669185816241"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p18669115816241"><a name="p18669115816241"></a><a name="p18669115816241"></a>GET /v1.0/{project_id}/asset/preheating</p>
@@ -152,24 +147,14 @@
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1452516367231"><a name="p1452516367231"></a><a name="p1452516367231"></a><a href="视频处理.md">视频处理</a></p>
 </td>
 </tr>
-<tr id="row8673163872920"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p567473852918"><a name="p567473852918"></a><a name="p567473852918"></a><span id="ph2690194092919"><a name="ph2690194092919"></a><a name="ph2690194092919"></a>DELETE /v1.0/{project_id}/asset/process</span></p>
+<tr id="row8673163872920"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p567473852918"><a name="p567473852918"></a><a name="p567473852918"></a>DELETE /v1.0/{project_id}/asset/process</p>
 </td>
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p8674738102920"><a name="p8674738102920"></a><a name="p8674738102920"></a><a href="取消媒资转码任务.md">取消媒资转码任务</a></p>
 </td>
 </tr>
-<tr id="row18864117163014"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p16864141714309"><a name="p16864141714309"></a><a name="p16864141714309"></a><span id="ph4617163053016"><a name="ph4617163053016"></a><a name="ph4617163053016"></a>DELETE /v1.0/{project_id}/asset/extract_audio</span></p>
+<tr id="row18864117163014"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p16864141714309"><a name="p16864141714309"></a><a name="p16864141714309"></a>DELETE /v1.0/{project_id}/asset/extract_audio</p>
 </td>
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1386481763010"><a name="p1386481763010"></a><a name="p1386481763010"></a><a href="取消提取音频任务.md">取消提取音频任务</a></p>
-</td>
-</tr>
-<tr id="row98566072317"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p16856504230"><a name="p16856504230"></a><a name="p16856504230"></a>POST /v1.0/{project_id}/asset/concat</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1252273613235"><a name="p1252273613235"></a><a name="p1252273613235"></a><a href="视频拼接.md">视频拼接</a></p>
-</td>
-</tr>
-<tr id="row188571408235"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p6857100142310"><a name="p6857100142310"></a><a name="p6857100142310"></a>POST /v1.0/{project_id}/asset/split</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p25219367233"><a name="p25219367233"></a><a name="p25219367233"></a><a href="视频剪切.md">视频剪切</a></p>
 </td>
 </tr>
 <tr id="row326191817471"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p69839188472"><a name="p69839188472"></a><a name="p69839188472"></a>POST /v1.0/{project_id}/asset/review</p>

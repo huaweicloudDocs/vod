@@ -43,7 +43,7 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/top-statistics
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p13531104818354"><a name="p13531104818354"></a><a name="p13531104818354"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1854632163617"><a name="p1854632163617"></a><a name="p1854632163617"></a>查询日期，格式为yyyymmdd。</p>
-<a name="ul20962449184219"></a><a name="ul20962449184219"></a><ul id="ul20962449184219"><li>date必须为昨天或之前的日期</li><li>最多只能查最近一个月内的数据</li></ul>
+<a name="ul20962449184219"></a><a name="ul20962449184219"></a><ul id="ul20962449184219"><li>date必须为昨天或之前的日期。</li><li>最多只能查最近一个月内的数据。</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p1953144833518"><a name="p1953144833518"></a><a name="p1953144833518"></a>M</p>
 </td>

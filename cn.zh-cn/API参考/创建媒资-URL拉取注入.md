@@ -56,7 +56,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p17443104945920"><a name="p17443104945920"></a><a name="p17443104945920"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1344312491599"><a name="p1344312491599"></a><a name="p1344312491599"></a>视频源文件URL</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1344312491599"><a name="p1344312491599"></a><a name="p1344312491599"></a>视频源文件URL。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p844317499596"><a name="p844317499596"></a><a name="p844317499596"></a>M</p>
 </td>
@@ -96,7 +96,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"></a>拉取的音视频文件类型。</p>
 <div class="p" id="p1042719724118"><a name="p1042719724118"></a><a name="p1042719724118"></a>取值如下：<a name="ul0436102264110"></a><a name="ul0436102264110"></a><ul id="ul0436102264110"><li>视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV</li><li>音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2</li></ul>
 </div>
-<p id="p151452038191311"><a name="p151452038191311"></a><a name="p151452038191311"></a>若上传格式为音频文件，则不支持转码，添加水印，添加字幕。</p>
+<p id="p151452038191311"><a name="p151452038191311"></a><a name="p151452038191311"></a>若上传格式为音频文件，则不支持转码、添加水印和字幕。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p54471849155918"><a name="p54471849155918"></a><a name="p54471849155918"></a>M</p>
 </td>
@@ -199,8 +199,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p102361502062"><a name="vod_04_0196_p102361502062"></a><a name="vod_04_0196_p102361502062"></a>截图类型。</p>
 <p id="vod_04_0196_p1832519442142"><a name="vod_04_0196_p1832519442142"></a><a name="vod_04_0196_p1832519442142"></a>取值如下：</p>
-<p id="vod_04_0196_p18201145463713"><a name="vod_04_0196_p18201145463713"></a><a name="vod_04_0196_p18201145463713"></a>time：每次进行截图的间隔时间。</p>
-<p id="vod_04_0196_p1951613492173"><a name="vod_04_0196_p1951613492173"></a><a name="vod_04_0196_p1951613492173"></a>dots : 按照指定的时间点截图。</p>
+<a name="vod_04_0196_ul6492111332810"></a><a name="vod_04_0196_ul6492111332810"></a><ul id="vod_04_0196_ul6492111332810"><li>time：每次进行截图的间隔时间。</li><li>dots : 按照指定的时间点截图。</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p162361300611"><a name="vod_04_0196_p162361300611"></a><a name="vod_04_0196_p162361300611"></a>M</p>
 </td>
@@ -211,7 +210,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p19236600620"><a name="vod_04_0196_p19236600620"></a><a name="vod_04_0196_p19236600620"></a>生成截图的时间间隔值。</p>
 <p id="vod_04_0196_p19116144333617"><a name="vod_04_0196_p19116144333617"></a><a name="vod_04_0196_p19116144333617"></a>取值范围：[1,12]之间的整数。</p>
-<p id="vod_04_0196_p135114883713"><a name="vod_04_0196_p135114883713"></a><a name="vod_04_0196_p135114883713"></a>单位：秒</p>
+<p id="vod_04_0196_p135114883713"><a name="vod_04_0196_p135114883713"></a><a name="vod_04_0196_p135114883713"></a>单位：秒。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p52365012614"><a name="vod_04_0196_p52365012614"></a><a name="vod_04_0196_p52365012614"></a>O</p>
 </td>
@@ -293,7 +292,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p116163113286"><a name="vod_04_0196_p116163113286"></a><a name="vod_04_0196_p116163113286"></a>审核模板ID。</p>
 <p id="vod_04_0196_p484616121185"><a name="vod_04_0196_p484616121185"></a><a name="vod_04_0196_p484616121185"></a>若不为空，则使用指定的模板ID对上传的音视频进行审核，您可以在视频点播控制台配置审核模板，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html" target="_blank" rel="noopener noreferrer">审核设置</a>。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p15846512101816"><a name="vod_04_0196_p15846512101816"></a><a name="vod_04_0196_p15846512101816"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p15846512101816"><a name="vod_04_0196_p15846512101816"></a><a name="vod_04_0196_p15846512101816"></a>M</p>
 </td>
 </tr>
 </tbody>
@@ -357,9 +356,9 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
     <a name="table1422513366329"></a>
     <table><thead align="left"><tr id="row18226183617321"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p112265368323"><a name="p112265368323"></a><a name="p112265368323"></a>参数</p>
     </th>
-    <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p1422612366325"><a name="p1422612366325"></a><a name="p1422612366325"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p1422612366325"><a name="p1422612366325"></a><a name="p1422612366325"></a>类型</p>
     </th>
-    <th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="p15226123618323"><a name="p15226123618323"></a><a name="p15226123618323"></a>类型</p>
+    <th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="p15226123618323"><a name="p15226123618323"></a><a name="p15226123618323"></a>说明</p>
     </th>
     </tr>
     </thead>

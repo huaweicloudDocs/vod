@@ -4,7 +4,7 @@
 
 若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。不同区域的云服务不能互连，所以待转存的OBS桶和点播服务必须在同一区域，如“华北-北京四”OBS桶中的音视频只能转存到“华北-北京四”点播服务中。
 
-![](figures/OBS转存流程图新.png)
+![](figures/zh-cn_image_0255368408.png)
 
 ## 调试<a name="section1696492974310"></a>
 
@@ -73,7 +73,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p55918423"></a>转存的音视频文件类型。</p>
 <div class="p" id="p1042719724118"><a name="p1042719724118"></a><a name="p1042719724118"></a>取值如下：<a name="ul0436102264110"></a><a name="ul0436102264110"></a><ul id="ul0436102264110"><li>视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV</li><li>音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2</li></ul>
 </div>
-<p id="p151452038191311"><a name="p151452038191311"></a><a name="p151452038191311"></a>若上传格式为音频文件，则不支持转码，添加水印，添加字幕。</p>
+<p id="p151452038191311"><a name="p151452038191311"></a><a name="p151452038191311"></a>若上传格式为音频文件，则不支持转码、添加水印和字幕。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p36689595"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p36689595"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p36689595"></a>M</p>
 </td>
@@ -99,6 +99,18 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 <p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p288132373411"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p288132373411"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p288132373411"></a>默认值：1。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p37890287"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p37890287"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p37890287"></a>O</p>
+</td>
+</tr>
+<tr id="row98565044119"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p198560015416"><a name="p198560015416"></a><a name="p198560015416"></a>auto_preheat</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p18856607414"><a name="p18856607414"></a><a name="p18856607414"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p991221345917"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p991221345917"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p991221345917"></a>是否自动预热到CDN。</p>
+<div class="p" id="p64710495418"><a name="p64710495418"></a><a name="p64710495418"></a>取值如下：<a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_ul18914181365920"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_ul18914181365920"></a><ul id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_ul18914181365920"><li>0：表示不自动预热。</li><li>1：表示自动预热。</li></ul>
+</div>
+<p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1092411316590"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1092411316590"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1092411316590"></a>默认值：0。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p785640184115"><a name="p785640184115"></a><a name="p785640184115"></a>O</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_row7768203416911"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p224314412295"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p224314412295"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p224314412295"></a>template_group_name</p>
@@ -152,6 +164,44 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1139210371192"><a name="p1139210371192"></a><a name="p1139210371192"></a>审核参数。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p93927371791"><a name="p93927371791"></a><a name="p93927371791"></a>O</p>
+</td>
+</tr>
+<tr id="row066910229538"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 ">&nbsp;&nbsp;</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 ">&nbsp;&nbsp;</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 ">&nbsp;&nbsp;</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row6621829155314"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 ">&nbsp;&nbsp;</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 ">&nbsp;&nbsp;</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 ">&nbsp;&nbsp;</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row111754013447"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p31754012445"><a name="p31754012445"></a><a name="p31754012445"></a>storage_mode</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p717517010445"><a name="p717517010445"></a><a name="p717517010445"></a>integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p14175200174419"><a name="p14175200174419"></a><a name="p14175200174419"></a>存储模式：0表示视频拷贝到点播桶 1表示视频存在租户的桶</p>
+<p id="p118651655185019"><a name="p118651655185019"></a><a name="p118651655185019"></a>默认值：0</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p91752013444"><a name="p91752013444"></a><a name="p91752013444"></a>O</p>
+</td>
+</tr>
+<tr id="row10544425144414"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p6544025164415"><a name="p6544025164415"></a><a name="p6544025164415"></a>output_bucket</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p2544325134420"><a name="p2544325134420"></a><a name="p2544325134420"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p554411256442"><a name="p554411256442"></a><a name="p554411256442"></a>输出桶名，storage_mode为1时必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p454492554420"><a name="p454492554420"></a><a name="p454492554420"></a>O</p>
+</td>
+</tr>
+<tr id="row1082363020445"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p9823103054418"><a name="p9823103054418"></a><a name="p9823103054418"></a>output_path</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p1282323016444"><a name="p1282323016444"></a><a name="p1282323016444"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p28239300444"><a name="p28239300444"></a><a name="p28239300444"></a>输出路径名，storage_mode为1时必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p28232303449"><a name="p28232303449"></a><a name="p28232303449"></a>O</p>
 </td>
 </tr>
 </tbody>
@@ -219,8 +269,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p102361502062"><a name="vod_04_0196_p102361502062"></a><a name="vod_04_0196_p102361502062"></a>截图类型。</p>
 <p id="vod_04_0196_p1832519442142"><a name="vod_04_0196_p1832519442142"></a><a name="vod_04_0196_p1832519442142"></a>取值如下：</p>
-<p id="vod_04_0196_p18201145463713"><a name="vod_04_0196_p18201145463713"></a><a name="vod_04_0196_p18201145463713"></a>time：每次进行截图的间隔时间。</p>
-<p id="vod_04_0196_p1951613492173"><a name="vod_04_0196_p1951613492173"></a><a name="vod_04_0196_p1951613492173"></a>dots : 按照指定的时间点截图。</p>
+<a name="vod_04_0196_ul6492111332810"></a><a name="vod_04_0196_ul6492111332810"></a><ul id="vod_04_0196_ul6492111332810"><li>time：每次进行截图的间隔时间。</li><li>dots : 按照指定的时间点截图。</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p162361300611"><a name="vod_04_0196_p162361300611"></a><a name="vod_04_0196_p162361300611"></a>M</p>
 </td>
@@ -231,7 +280,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p19236600620"><a name="vod_04_0196_p19236600620"></a><a name="vod_04_0196_p19236600620"></a>生成截图的时间间隔值。</p>
 <p id="vod_04_0196_p19116144333617"><a name="vod_04_0196_p19116144333617"></a><a name="vod_04_0196_p19116144333617"></a>取值范围：[1,12]之间的整数。</p>
-<p id="vod_04_0196_p135114883713"><a name="vod_04_0196_p135114883713"></a><a name="vod_04_0196_p135114883713"></a>单位：秒</p>
+<p id="vod_04_0196_p135114883713"><a name="vod_04_0196_p135114883713"></a><a name="vod_04_0196_p135114883713"></a>单位：秒。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p52365012614"><a name="vod_04_0196_p52365012614"></a><a name="vod_04_0196_p52365012614"></a>O</p>
 </td>
@@ -313,7 +362,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p116163113286"><a name="vod_04_0196_p116163113286"></a><a name="vod_04_0196_p116163113286"></a>审核模板ID。</p>
 <p id="vod_04_0196_p484616121185"><a name="vod_04_0196_p484616121185"></a><a name="vod_04_0196_p484616121185"></a>若不为空，则使用指定的模板ID对上传的音视频进行审核，您可以在视频点播控制台配置审核模板，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html" target="_blank" rel="noopener noreferrer">审核设置</a>。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p15846512101816"><a name="vod_04_0196_p15846512101816"></a><a name="vod_04_0196_p15846512101816"></a>O</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p15846512101816"><a name="vod_04_0196_p15846512101816"></a><a name="vod_04_0196_p15846512101816"></a>M</p>
 </td>
 </tr>
 </tbody>
