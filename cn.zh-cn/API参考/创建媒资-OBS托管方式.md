@@ -14,9 +14,59 @@ OBS托管方式分为增量托管和存量托管，增量托管暂只支持通�
 
 POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 
+**表 1**  路径参数
+
+<a name="table6869913124919"></a>
+<table><thead align="left"><tr id="vod_04_0196_row58691013184917"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p18869171324920"><a name="vod_04_0196_p18869171324920"></a><a name="vod_04_0196_p18869171324920"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="vod_04_0196_p1386920134497"><a name="vod_04_0196_p1386920134497"></a><a name="vod_04_0196_p1386920134497"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.3"><p id="vod_04_0196_p1386931394910"><a name="vod_04_0196_p1386931394910"></a><a name="vod_04_0196_p1386931394910"></a>说明</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.4"><p id="vod_04_0196_p10869213144912"><a name="vod_04_0196_p10869213144912"></a><a name="vod_04_0196_p10869213144912"></a>必选项（M）/可选项（O）</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="vod_04_0196_row1586931374911"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p14253192105011"><a name="vod_04_0196_p14253192105011"></a><a name="vod_04_0196_p14253192105011"></a>project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p62548235018"><a name="vod_04_0196_p62548235018"></a><a name="vod_04_0196_p62548235018"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p0254323500"><a name="vod_04_0196_p0254323500"></a><a name="vod_04_0196_p0254323500"></a>项目ID，获取方法请参考<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0058.html" target="_blank" rel="noopener noreferrer">获取项目ID</a>。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p9936171618529"><a name="vod_04_0196_p9936171618529"></a><a name="vod_04_0196_p9936171618529"></a>M</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## 请求参数<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section13573338112812"></a>
 
-**表 1**  请求参数
+**表 2**  请求Header参数
+
+<a name="HeaderParameter"></a>
+<table><thead align="left"><tr id="vod_04_0196_row1359311223199"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p959302213191"><a name="vod_04_0196_p959302213191"></a><a name="vod_04_0196_p959302213191"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="vod_04_0196_p6594132291914"><a name="vod_04_0196_p6594132291914"></a><a name="vod_04_0196_p6594132291914"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.3"><p id="vod_04_0196_p1659492213198"><a name="vod_04_0196_p1659492213198"></a><a name="vod_04_0196_p1659492213198"></a>描述</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.4"><p id="vod_04_0196_p971659181911"><a name="vod_04_0196_p971659181911"></a><a name="vod_04_0196_p971659181911"></a>必选项（M）/可选项（O）</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="vod_04_0196_row5593132218192"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p959417226199"><a name="vod_04_0196_p959417226199"></a><a name="vod_04_0196_p959417226199"></a>X-Auth-Token</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p5594132231911"><a name="vod_04_0196_p5594132231911"></a><a name="vod_04_0196_p5594132231911"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p1159416229196"><a name="vod_04_0196_p1159416229196"></a><a name="vod_04_0196_p1159416229196"></a>用户Token。 通过调用IAM服务获取用户Token接口获取（响应消息头中X-Subject-Token的值）。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p147114598193"><a name="vod_04_0196_p147114598193"></a><a name="vod_04_0196_p147114598193"></a>M</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 3**  请求Body参数
 
 <a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_table11962631"></a>
 <table><thead align="left"><tr id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_row4709306"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p45909486"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p45909486"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p45909486"></a>参数</p>
@@ -49,7 +99,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 </tr>
 <tr id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_row57482668"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p20952192314359"><a name="p20952192314359"></a><a name="p20952192314359"></a>suffix</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"></a>Array of Strings</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p59079892"></a>Array of strings</p>
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p2502122213217"><a name="p2502122213217"></a><a name="p2502122213217"></a>批量托管时的文件后缀名列表。不传或传空值时，表示托管所有音视频文件，不进行后缀名过滤。</p>
 </td>
@@ -128,7 +178,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 
 -   **处理成功时返回**
 
-    **表 2**  处理成功返回参数
+    **表 4**  处理成功返回参数
 
     <a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_table162710272419"></a>
     <table><thead align="left"><tr id="zh-cn_topic_0128109900_zh-cn_topic_0127940848_row99616271442"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p149611527042"><a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p149611527042"></a><a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p149611527042"></a>参数</p>
@@ -151,7 +201,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/obs/host/stock/task
 
 -   **处理失败时返回**
 
-    **表 3**  处理失败返回参数
+    **表 5**  处理失败返回参数
 
     <a name="table7878165410215"></a>
     <table><thead align="left"><tr id="row12878125415218"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p108791754182117"><a name="p108791754182117"></a><a name="p108791754182117"></a>参数</p>

@@ -14,9 +14,59 @@
 
 POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 
+**表 1**  路径参数
+
+<a name="table6869913124919"></a>
+<table><thead align="left"><tr id="vod_04_0196_row58691013184917"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p18869171324920"><a name="vod_04_0196_p18869171324920"></a><a name="vod_04_0196_p18869171324920"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="vod_04_0196_p1386920134497"><a name="vod_04_0196_p1386920134497"></a><a name="vod_04_0196_p1386920134497"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.3"><p id="vod_04_0196_p1386931394910"><a name="vod_04_0196_p1386931394910"></a><a name="vod_04_0196_p1386931394910"></a>说明</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.4"><p id="vod_04_0196_p10869213144912"><a name="vod_04_0196_p10869213144912"></a><a name="vod_04_0196_p10869213144912"></a>必选项（M）/可选项（O）</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="vod_04_0196_row1586931374911"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p14253192105011"><a name="vod_04_0196_p14253192105011"></a><a name="vod_04_0196_p14253192105011"></a>project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p62548235018"><a name="vod_04_0196_p62548235018"></a><a name="vod_04_0196_p62548235018"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p0254323500"><a name="vod_04_0196_p0254323500"></a><a name="vod_04_0196_p0254323500"></a>项目ID，获取方法请参考<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0058.html" target="_blank" rel="noopener noreferrer">获取项目ID</a>。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p9936171618529"><a name="vod_04_0196_p9936171618529"></a><a name="vod_04_0196_p9936171618529"></a>M</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## 请求参数<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section13573338112812"></a>
 
-**表 1**  请求参数
+**表 2**  请求Header参数
+
+<a name="HeaderParameter"></a>
+<table><thead align="left"><tr id="vod_04_0196_row1359311223199"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p959302213191"><a name="vod_04_0196_p959302213191"></a><a name="vod_04_0196_p959302213191"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="vod_04_0196_p6594132291914"><a name="vod_04_0196_p6594132291914"></a><a name="vod_04_0196_p6594132291914"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.3"><p id="vod_04_0196_p1659492213198"><a name="vod_04_0196_p1659492213198"></a><a name="vod_04_0196_p1659492213198"></a>描述</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.4"><p id="vod_04_0196_p971659181911"><a name="vod_04_0196_p971659181911"></a><a name="vod_04_0196_p971659181911"></a>必选项（M）/可选项（O）</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="vod_04_0196_row5593132218192"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p959417226199"><a name="vod_04_0196_p959417226199"></a><a name="vod_04_0196_p959417226199"></a>X-Auth-Token</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p5594132231911"><a name="vod_04_0196_p5594132231911"></a><a name="vod_04_0196_p5594132231911"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p1159416229196"><a name="vod_04_0196_p1159416229196"></a><a name="vod_04_0196_p1159416229196"></a>用户Token。 通过调用IAM服务获取用户Token接口获取（响应消息头中X-Subject-Token的值）。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p147114598193"><a name="vod_04_0196_p147114598193"></a><a name="vod_04_0196_p147114598193"></a>M</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 3**  请求Body参数
 
 <a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_table11962631"></a>
 <table><thead align="left"><tr id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_row4709306"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p45909486"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p45909486"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p45909486"></a>参数</p>
@@ -166,21 +216,13 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p93927371791"><a name="p93927371791"></a><a name="p93927371791"></a>O</p>
 </td>
 </tr>
-<tr id="row066910229538"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 ">&nbsp;&nbsp;</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 ">&nbsp;&nbsp;</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 ">&nbsp;&nbsp;</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 ">&nbsp;&nbsp;</td>
-</tr>
-<tr id="row6621829155314"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 ">&nbsp;&nbsp;</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 ">&nbsp;&nbsp;</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 ">&nbsp;&nbsp;</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 ">&nbsp;&nbsp;</td>
-</tr>
 <tr id="row111754013447"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p31754012445"><a name="p31754012445"></a><a name="p31754012445"></a>storage_mode</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p717517010445"><a name="p717517010445"></a><a name="p717517010445"></a>integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p14175200174419"><a name="p14175200174419"></a><a name="p14175200174419"></a>存储模式：0表示视频拷贝到点播桶 1表示视频存在租户的桶</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p69116306530"><a name="p69116306530"></a><a name="p69116306530"></a>存储模式。</p>
+<div class="p" id="p112441638155316"><a name="p112441638155316"></a><a name="p112441638155316"></a>取值如下：<a name="ul5834352195315"></a><a name="ul5834352195315"></a><ul id="ul5834352195315"><li>0：表示视频拷贝到点播桶。</li><li>1：表示视频存储在租户桶。</li></ul>
+</div>
 <p id="p118651655185019"><a name="p118651655185019"></a><a name="p118651655185019"></a>默认值：0</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p91752013444"><a name="p91752013444"></a><a name="p91752013444"></a>O</p>
@@ -190,7 +232,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p2544325134420"><a name="p2544325134420"></a><a name="p2544325134420"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p554411256442"><a name="p554411256442"></a><a name="p554411256442"></a>输出桶名，storage_mode为1时必选</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p554411256442"><a name="p554411256442"></a><a name="p554411256442"></a>输出桶名，<span class="parmname" id="parmname1386611135316"><a name="parmname1386611135316"></a><a name="parmname1386611135316"></a>“storage_mode”</span>为1时必选。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p454492554420"><a name="p454492554420"></a><a name="p454492554420"></a>O</p>
 </td>
@@ -199,7 +241,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p1282323016444"><a name="p1282323016444"></a><a name="p1282323016444"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p28239300444"><a name="p28239300444"></a><a name="p28239300444"></a>输出路径名，storage_mode为1时必选</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p28239300444"><a name="p28239300444"></a><a name="p28239300444"></a>输出路径名，<span class="parmname" id="parmname24570144530"><a name="parmname24570144530"></a><a name="parmname24570144530"></a>“storage_mode”</span>为1时必选。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p28232303449"><a name="p28232303449"></a><a name="p28232303449"></a>O</p>
 </td>
@@ -207,7 +249,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </tbody>
 </table>
 
-**表 2**  file\_addr参数说明
+**表 4**  file\_addr参数说明
 
 <a name="table12261237151119"></a>
 <table><thead align="left"><tr id="row18226113720118"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="p15226203731113"><a name="p15226203731113"></a><a name="p15226203731113"></a>参数名</p>
@@ -250,7 +292,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </tbody>
 </table>
 
-**表 3**  Thumbnail参数说明
+**表 5**  Thumbnail参数说明
 
 <a name="table22291146121512"></a>
 <table><thead align="left"><tr id="vod_04_0196_row6236110565"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p1523610566"><a name="vod_04_0196_p1523610566"></a><a name="vod_04_0196_p1523610566"></a>参数</p>
@@ -342,7 +384,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </tbody>
 </table>
 
-**表 4**  Review参数说明
+**表 6**  Review参数说明
 
 <a name="table139381435171712"></a>
 <table><thead align="left"><tr id="vod_04_0196_row124991151087"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p449905788"><a name="vod_04_0196_p449905788"></a><a name="vod_04_0196_p449905788"></a>参数</p>
@@ -391,7 +433,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 
 -   **处理成功时返回**
 
-    **表 5**  处理成功返回参数
+    **表 7**  处理成功返回参数
 
     <a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_table162710272419"></a>
     <table><thead align="left"><tr id="zh-cn_topic_0128109900_zh-cn_topic_0127940848_row99616271442"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p149611527042"><a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p149611527042"></a><a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p149611527042"></a>参数</p>
@@ -414,7 +456,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 
 -   **处理失败时返回**
 
-    **表 6**  处理失败返回参数
+    **表 8**  处理失败返回参数
 
     <a name="table7878165410215"></a>
     <table><thead align="left"><tr id="row12878125415218"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p108791754182117"><a name="p108791754182117"></a><a name="p108791754182117"></a>参数</p>
