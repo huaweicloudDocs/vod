@@ -186,6 +186,18 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1324417418295"><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1324417418295"></a><a name="zh-cn_topic_0128109898_zh-cn_topic_0127940846_p1324417418295"></a>O</p>
 </td>
 </tr>
+<tr id="row74614812584"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p17465811585"><a name="p17465811585"></a><a name="p17465811585"></a>auto_preheat</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p246198165814"><a name="p246198165814"></a><a name="p246198165814"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p488474613585"><a name="p488474613585"></a><a name="p488474613585"></a>是否自动预热到CDN。</p>
+<p id="p1884194605814"><a name="p1884194605814"></a><a name="p1884194605814"></a>取值如下：</p>
+<a name="ul28541631144513"></a><a name="ul28541631144513"></a><ul id="ul28541631144513"><li>0：表示不自动预热。</li><li>1：表示自动预热。</li></ul>
+<p id="p128846469583"><a name="p128846469583"></a><a name="p128846469583"></a>默认值：0。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p9464816581"><a name="p9464816581"></a><a name="p9464816581"></a>O</p>
+</td>
+</tr>
 <tr id="row4739172493714"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p14827123115351"><a name="p14827123115351"></a><a name="p14827123115351"></a>workflow_name</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p13709142911351"><a name="p13709142911351"></a><a name="p13709142911351"></a>String</p>
