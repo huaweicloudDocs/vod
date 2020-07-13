@@ -82,8 +82,8 @@
 
 6.  单击“保存“，完成添加。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >CNAME记录添加完成后实时生效。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >CNAME记录添加完成后实时生效。
 
 
 ## 万网配置方法<a name="zh-cn_topic_0117188957_section7421940184219"></a>
@@ -147,8 +147,8 @@
 
 6.  单击“确认“，完成添加。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >CNAME记录添加完成后实时生效。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >CNAME记录添加完成后实时生效。
 
 
 ## 新网配置方法<a name="zh-cn_topic_0117188957_section1569151716326"></a>
@@ -197,8 +197,8 @@
 
 5.  单击“确认“，完成添加。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >CNAME记录添加完成后实时生效。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >CNAME记录添加完成后实时生效。
 
 
 ## 验证加速域名是否CNAME配置成功<a name="zh-cn_topic_0117188957_section17479726161813"></a>

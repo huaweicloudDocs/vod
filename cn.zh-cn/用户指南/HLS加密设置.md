@@ -2,8 +2,8 @@
 
 防盗链机制只能避免非授权用户拿到URL后去下载、播放视频，但无法阻止恶意的付费用户将视频下载到本地后进行二次分发。因此，为有效防止视频泄露和盗链问题，华为云提供对HLS视频进行内容加密的能力，加密后的视频，即使恶意用户下载也很难分发给其他人观看。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->HLS加密的具体实现原理及流程请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>HLS加密的具体实现原理及流程请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。
 
 ## 注意事项<a name="section17310205154912"></a>
 
