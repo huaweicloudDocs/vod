@@ -111,7 +111,9 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13038474"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13038474"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13038474"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p49483440"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p49483440"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p49483440"></a>媒资分类ID。</p>
-<p id="p1113582020331"><a name="p1113582020331"></a><a name="p1113582020331"></a>若不为空，则可以将上传的音视频归类到指定分类中，您可以在视频点播控制台配置分类，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod010006.html" target="_blank" rel="noopener noreferrer">分类设置</a>。</p>
+<div class="p" id="p1113582020331"><a name="p1113582020331"></a><a name="p1113582020331"></a>您可以调用<a href="创建媒资分类.md">创建媒资分类</a>接口或在点播控制台的<a href="https://support.huaweicloud.com/usermanual-vod/vod010006.html" target="_blank" rel="noopener noreferrer">分类设置</a>中创建对应的媒资分类，并获取分类ID。<div class="note" id="vod_04_0196_note174244408575"><a name="vod_04_0196_note174244408575"></a><a name="vod_04_0196_note174244408575"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="vod_04_0196_p114312040185716"><a name="vod_04_0196_p114312040185716"></a><a name="vod_04_0196_p114312040185716"></a>若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。</p>
+</div></div>
+</div>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p55277862"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p55277862"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p55277862"></a>O</p>
 </td>
