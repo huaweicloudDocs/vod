@@ -37,7 +37,7 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/cdn-statistics
 </tbody>
 </table>
 
-**表 2** Query参数
+**表 2**  Query参数
 
 <a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_table19206131"></a>
 <table><thead align="left"><tr id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_row16057184"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"></a>参数</p>

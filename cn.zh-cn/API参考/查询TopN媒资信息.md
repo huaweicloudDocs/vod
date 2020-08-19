@@ -37,7 +37,7 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/top-statistics
 </tbody>
 </table>
 
-**表 2** Query参数
+**表 2**  Query参数
 
 <a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_table19206131"></a>
 <table><thead align="left"><tr id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_row16057184"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"></a>参数</p>
@@ -152,7 +152,7 @@ GET /v1.0/{project_id}/asset/top-statistics?domain=ALL&date=20190612
     </tr>
     <tr id="row1072004164013"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p47202424018"><a name="p47202424018"></a><a name="p47202424018"></a>value</p>
     </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1172004174019"><a name="p1172004174019"></a><a name="p1172004174019"></a><span id="ph167394921810"><a name="ph167394921810"></a><a name="ph167394921810"></a>Long</span></p>
+    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1172004174019"><a name="p1172004174019"></a><a name="p1172004174019"></a>Long</p>
     </td>
     <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p672012412407"><a name="p672012412407"></a><a name="p672012412407"></a>总播放次数。</p>
     </td>
@@ -174,7 +174,7 @@ GET /v1.0/{project_id}/asset/top-statistics?domain=ALL&date=20190612
     </tr>
     <tr id="row2511425154015"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1351142584011"><a name="p1351142584011"></a><a name="p1351142584011"></a>size</p>
     </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p35122584014"><a name="p35122584014"></a><a name="p35122584014"></a><span id="ph843414461810"><a name="ph843414461810"></a><a name="ph843414461810"></a>Long</span></p>
+    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p35122584014"><a name="p35122584014"></a><a name="p35122584014"></a>Long</p>
     </td>
     <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p8707165501913"><a name="p8707165501913"></a><a name="p8707165501913"></a>媒资原始大小。</p>
     <p id="p651142518402"><a name="p651142518402"></a><a name="p651142518402"></a>单位：字节。</p>
