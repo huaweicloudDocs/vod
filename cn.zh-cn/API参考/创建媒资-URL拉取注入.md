@@ -368,7 +368,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 {
 	"upload_metadatas":[
 		{
-			 "url": "https://mpc-test.obs.myhwclouds.com/Avatar_480P.mp4",	
+			 "url": "https://mpc-test.obs.cn-north-4.myhuaweicloud.com/Avatar_480P.mp4",	
 			 "title": "Avatar test test",     
 			 "video_type": "MP4",	
 			 "description": "Avatar, test",
@@ -377,7 +377,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 			 "auto_publish": 1
 		},
 		{
-			 "url": "https://mpc-test.obs.myhwclouds.com/Avatar_720.mp4",	
+			 "url": "https://mpc-test.obs.cn-north-4.myhuaweicloud.com/Avatar_720.mp4",	
 			 "title": "Avatar test test",     
 			 "video_type": "MP4",	
 			 "description": "Avatar, test",
@@ -496,13 +496,13 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
     {
       "upload_assets": [
         {
-          "url": "https://mpc-test.obs.myhwclouds.com/Avatar_480P.mp4",
+          "url": "https://mpc-test.obs.cn-north-4.myhuaweicloud.com/Avatar_480P.mp4",
           "asset_id": "f488337c31c8e4622f1590735b134c65",
           "error_code": null,
           "error_msg": null
         },
         {
-          "url": "https://mpc-test.obs.myhwclouds.com/Avatar_720.mp4",
+          "url": "https://mpc-test.obs.cn-north-4.myhuaweicloud.com/Avatar_720.mp4",
           "asset_id": "f488337c31c8e4622f1590525b134c65",
           "error_code": null,
           "error_msg": null
