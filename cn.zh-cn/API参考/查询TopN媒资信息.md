@@ -54,7 +54,7 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/top-statistics
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p8361154813166"><a name="p8361154813166"></a><a name="p8361154813166"></a>TopN媒资信息要么查询单个域名要么查询所有域名。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p8361154813166"><a name="p8361154813166"></a><a name="p8361154813166"></a>查询域名，暂只支持查询单个或者全部域名。</p>
 <p id="p127871167428"><a name="p127871167428"></a><a name="p127871167428"></a>取值如下：</p>
 <a name="ul11782191634215"></a><a name="ul11782191634215"></a><ul id="ul11782191634215"><li>单个加速域名，格式：example.test1.com。</li><li>ALL：表示查询名下全部域名。</li></ul>
 </td>

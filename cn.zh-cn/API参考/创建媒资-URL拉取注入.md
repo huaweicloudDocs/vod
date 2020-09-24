@@ -106,7 +106,9 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p17443104945920"><a name="p17443104945920"></a><a name="p17443104945920"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1344312491599"><a name="p1344312491599"></a><a name="p1344312491599"></a>视频源文件URL。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1344312491599"><a name="p1344312491599"></a><a name="p1344312491599"></a>音视频源文件URL。</p>
+<div class="note" id="note9116528144614"><a name="note9116528144614"></a><a name="note9116528144614"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p13116162864617"><a name="p13116162864617"></a><a name="p13116162864617"></a>URL必须以扩展名结尾，暂只支持htpp和https协议。</p>
+</div></div>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p844317499596"><a name="p844317499596"></a><a name="p844317499596"></a>M</p>
 </td>
@@ -124,7 +126,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p544518495592"><a name="p544518495592"></a><a name="p544518495592"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p744604985917"><a name="p744604985917"></a><a name="p744604985917"></a>视频描述，长度不超过1024个字节。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p744604985917"><a name="p744604985917"></a><a name="p744604985917"></a>音视频描述，长度不超过1024个字节。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p9446154985916"><a name="p9446154985916"></a><a name="p9446154985916"></a>O</p>
 </td>
@@ -157,7 +159,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p16447749135914"><a name="p16447749135914"></a><a name="p16447749135914"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p175919618333"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p175919618333"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p175919618333"></a>视频标签。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p175919618333"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p175919618333"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p175919618333"></a>音视频标签。</p>
 <p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p177381053319"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p177381053319"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p177381053319"></a>单个标签不超过16个字节，最多不超过16个标签。</p>
 <p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p54975040"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p54975040"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p54975040"></a>多个用逗号分隔，UTF8编码。</p>
 </td>
@@ -353,8 +355,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p16846112181812"><a name="vod_04_0196_p16846112181812"></a><a name="vod_04_0196_p16846112181812"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p116163113286"><a name="vod_04_0196_p116163113286"></a><a name="vod_04_0196_p116163113286"></a>审核模板ID。</p>
-<p id="vod_04_0196_p484616121185"><a name="vod_04_0196_p484616121185"></a><a name="vod_04_0196_p484616121185"></a>若不为空，则使用指定的模板ID对上传的音视频进行审核，您可以在视频点播控制台配置审核模板，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html" target="_blank" rel="noopener noreferrer">审核设置</a>。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p116163113286"><a name="vod_04_0196_p116163113286"></a><a name="vod_04_0196_p116163113286"></a>审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html" target="_blank" rel="noopener noreferrer">审核设置</a>。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p15846512101816"><a name="vod_04_0196_p15846512101816"></a><a name="vod_04_0196_p15846512101816"></a>M</p>
 </td>
@@ -430,7 +431,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
     </td>
     <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p422614364328"><a name="p422614364328"></a><a name="p422614364328"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p19227143623218"><a name="p19227143623218"></a><a name="p19227143623218"></a>媒资所在URL。</p>
+    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p122194252505"><a name="p122194252505"></a><a name="p122194252505"></a>音视频源文件URL。</p>
     </td>
     </tr>
     <tr id="row322793612323"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p2227133623214"><a name="p2227133623214"></a><a name="p2227133623214"></a>asset_id</p>

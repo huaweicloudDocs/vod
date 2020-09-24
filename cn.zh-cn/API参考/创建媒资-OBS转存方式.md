@@ -2,9 +2,11 @@
 
 ## 功能介绍<a name="section157020365410"></a>
 
-若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。不同区域的云服务不能互连，所以待转存的OBS桶和点播服务必须在同一区域，如“华北-北京四”OBS桶中的音视频只能转存到“华北-北京四”点播服务中。
+若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。调用该接口前，您需要调用[桶授权](桶授权.md)接口，将存储音视频文件的OBS桶授权给点播服务。
 
-![](figures/zh-cn_image_0255368408.png)
+## 接口约束<a name="section07782519711"></a>
+
+由于不同区域的云服务不能互连，所以待转存的OBS桶和点播服务必须在同一区域，如“华北-北京四”OBS桶中的音视频只能转存到“华北-北京四”点播服务中。
 
 ## 调试<a name="section1696492974310"></a>
 
@@ -83,7 +85,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p18540105216368"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p18540105216368"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p18540105216368"></a><a href="#table12261237151119">file_addr</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13540145253619"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13540145253619"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13540145253619"></a>待发布媒资地址。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13540145253619"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13540145253619"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p13540145253619"></a>待转存媒资存储的OBS地址。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p155408523369"><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p155408523369"></a><a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_p155408523369"></a>M</p>
 </td>
@@ -403,8 +405,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p16846112181812"><a name="vod_04_0196_p16846112181812"></a><a name="vod_04_0196_p16846112181812"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p116163113286"><a name="vod_04_0196_p116163113286"></a><a name="vod_04_0196_p116163113286"></a>审核模板ID。</p>
-<p id="vod_04_0196_p484616121185"><a name="vod_04_0196_p484616121185"></a><a name="vod_04_0196_p484616121185"></a>若不为空，则使用指定的模板ID对上传的音视频进行审核，您可以在视频点播控制台配置审核模板，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html" target="_blank" rel="noopener noreferrer">审核设置</a>。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p116163113286"><a name="vod_04_0196_p116163113286"></a><a name="vod_04_0196_p116163113286"></a>审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html" target="_blank" rel="noopener noreferrer">审核设置</a>。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p15846512101816"><a name="vod_04_0196_p15846512101816"></a><a name="vod_04_0196_p15846512101816"></a>M</p>
 </td>
@@ -450,7 +451,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/reproduction
     </td>
     <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p1596382713413"><a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p1596382713413"></a><a name="zh-cn_topic_0128109900_zh-cn_topic_0127940848_p1596382713413"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p04681454474"><a name="p04681454474"></a><a name="p04681454474"></a>媒资ID，UUID（通用唯一识别码）。</p>
+    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p04681454474"><a name="p04681454474"></a><a name="p04681454474"></a>媒资ID。</p>
     </td>
     </tr>
     </tbody>
