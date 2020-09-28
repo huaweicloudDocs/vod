@@ -107,7 +107,7 @@ POST /v1.0/\{[project\_id](获取项目ID.md)\}/asset/upload\_by\_url
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p17443104945920"><a name="p17443104945920"></a><a name="p17443104945920"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.3 "><p id="p1344312491599"><a name="p1344312491599"></a><a name="p1344312491599"></a>音视频源文件URL。</p>
-<div class="note" id="note9116528144614"><a name="note9116528144614"></a><a name="note9116528144614"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p13116162864617"><a name="p13116162864617"></a><a name="p13116162864617"></a>URL必须以扩展名结尾，暂只支持htpp和https协议。</p>
+<div class="note" id="note9116528144614"><a name="note9116528144614"></a><a name="note9116528144614"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p13116162864617"><a name="p13116162864617"></a><a name="p13116162864617"></a>URL必须以扩展名结尾，暂只支持http和https协议。</p>
 </div></div>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.4 "><p id="p844317499596"><a name="p844317499596"></a><a name="p844317499596"></a>M</p>
