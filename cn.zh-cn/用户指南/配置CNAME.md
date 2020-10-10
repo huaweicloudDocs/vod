@@ -128,7 +128,7 @@
 nslookup -qt=cname 加速域名
 ```
 
-如果回显CNAME，则表示CNAME配置已经生效，如下图：
+如果回显CNAME，则表示CNAME配置已经生效，如[图4](#fig1929782920556)所示。
 
 **图 4**  CNAME生效验证<a name="fig1929782920556"></a>  
 ![](figures/CNAME生效验证.png "CNAME生效验证")
