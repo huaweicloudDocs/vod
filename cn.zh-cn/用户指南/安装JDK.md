@@ -51,6 +51,7 @@
         </tbody>
         </table>
 
+
 4.  打开命令行窗口，输入“java -version”。显示Java版本信息即表示配置成功。
 
     以JDK 8为例，成功示例图如下：

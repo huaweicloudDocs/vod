@@ -16,6 +16,7 @@
         **图 1**  获取CNAME值<a name="fig058414430588"></a>  
         ![](figures/获取CNAME值.png "获取CNAME值")
 
+
 2.  登录[云解析服务](https://console.huaweicloud.com/dns)控制台。
 3.  在左侧导航中，选择“域名解析 \> 公网解析“，进入域名列表页面。
 4.  在需要配置解析的域名行，单击“域名“列的域名名称。
