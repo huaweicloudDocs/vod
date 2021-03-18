@@ -4,7 +4,7 @@
 
 调用[创建媒资：上传方式](创建媒资-上传方式.md)和[视频更新](视频更新.md)接口时，可以通过“video\_md5“设置媒资文件的MD5值。设置后，OBS会对媒资的MD5值进行检验，具体可参考[设置对象属性](https://support.huaweicloud.com/sdk-ios-devg-obs/obs_27_0405.html)。
 
-该MD5值是经过标准的MD5哈希算法计算后，再进行base64编码的，示例代码如下所示：
+该MD5值是经过标准的MD5哈希算法计算后，再进行base64编码的。示例代码如下所示：
 
 ```
 import org.apache.commons.codec.binary.Base64;

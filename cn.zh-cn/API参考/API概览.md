@@ -54,28 +54,6 @@
 </tbody>
 </table>
 
-## 媒资预热<a name="section893685092412"></a>
-
-<a name="table1966855842420"></a>
-<table><thead align="left"><tr id="row1564713245257"><th class="cellrowborder" valign="top" width="59.95%" id="mcps1.1.3.1.1"><p id="p166477248253"><a name="p166477248253"></a><a name="p166477248253"></a>接口</p>
-</th>
-<th class="cellrowborder" valign="top" width="40.050000000000004%" id="mcps1.1.3.1.2"><p id="p1764792412255"><a name="p1764792412255"></a><a name="p1764792412255"></a>说明</p>
-</th>
-</tr>
-</thead>
-<tbody><tr id="row966825818243"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p866955882410"><a name="p866955882410"></a><a name="p866955882410"></a>POST /v1.0/{project_id}/asset/preheating</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p185497171851"><a name="p185497171851"></a><a name="p185497171851"></a><a href="媒资预热.md">媒资预热</a></p>
-</td>
-</tr>
-<tr id="row3669185816241"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p18669115816241"><a name="p18669115816241"></a><a name="p18669115816241"></a>GET /v1.0/{project_id}/asset/preheating</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1766916581249"><a name="p1766916581249"></a><a name="p1766916581249"></a><a href="查询预热结果.md">查询预热结果</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
 ## 媒资管理<a name="section6123543193"></a>
 
 <a name="table182073261196"></a>
@@ -123,6 +101,28 @@
 </tbody>
 </table>
 
+## 媒资预热<a name="section893685092412"></a>
+
+<a name="table1966855842420"></a>
+<table><thead align="left"><tr id="row1564713245257"><th class="cellrowborder" valign="top" width="59.95%" id="mcps1.1.3.1.1"><p id="p166477248253"><a name="p166477248253"></a><a name="p166477248253"></a>接口</p>
+</th>
+<th class="cellrowborder" valign="top" width="40.050000000000004%" id="mcps1.1.3.1.2"><p id="p1764792412255"><a name="p1764792412255"></a><a name="p1764792412255"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row966825818243"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p866955882410"><a name="p866955882410"></a><a name="p866955882410"></a>POST /v1.0/{project_id}/asset/preheating</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p185497171851"><a name="p185497171851"></a><a name="p185497171851"></a><a href="媒资预热.md">媒资预热</a></p>
+</td>
+</tr>
+<tr id="row3669185816241"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p18669115816241"><a name="p18669115816241"></a><a name="p18669115816241"></a>GET /v1.0/{project_id}/asset/preheating</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1766916581249"><a name="p1766916581249"></a><a name="p1766916581249"></a><a href="查询预热结果.md">查询预热结果</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## 媒资处理<a name="section1819719437223"></a>
 
 <a name="table19855106231"></a>
@@ -132,7 +132,17 @@
 </th>
 </tr>
 </thead>
-<tbody><tr id="row165542143711"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1963195823715"><a name="p1963195823715"></a><a name="p1963195823715"></a>PUT /v1.0/{project_id}/asset</p>
+<tbody><tr id="row621135995620"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p148567022317"><a name="p148567022317"></a><a name="p148567022317"></a>POST /v1.0/{project_id}/asset/process</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1452516367231"><a name="p1452516367231"></a><a name="p1452516367231"></a><a href="视频处理.md">视频处理</a></p>
+</td>
+</tr>
+<tr id="row1986632555718"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p567473852918"><a name="p567473852918"></a><a name="p567473852918"></a>DELETE /v1.0/{project_id}/asset/process</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p8674738102920"><a name="p8674738102920"></a><a name="p8674738102920"></a><a href="取消媒资转码任务.md">取消媒资转码任务</a></p>
+</td>
+</tr>
+<tr id="row165542143711"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1963195823715"><a name="p1963195823715"></a><a name="p1963195823715"></a>PUT /v1.0/{project_id}/asset</p>
 </td>
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p56311658103712"><a name="p56311658103712"></a><a name="p56311658103712"></a><a href="视频更新.md">视频更新</a></p>
 </td>
@@ -140,16 +150,6 @@
 <tr id="row19912452371"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p112931452123718"><a name="p112931452123718"></a><a name="p112931452123718"></a>POST /v1.0/{project_id}/asset/extract_audio</p>
 </td>
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p52931052193713"><a name="p52931052193713"></a><a name="p52931052193713"></a><a href="音频提取.md">音频提取</a></p>
-</td>
-</tr>
-<tr id="row68563002313"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p148567022317"><a name="p148567022317"></a><a name="p148567022317"></a>POST /v1.0/{project_id}/asset/process</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1452516367231"><a name="p1452516367231"></a><a name="p1452516367231"></a><a href="视频处理.md">视频处理</a></p>
-</td>
-</tr>
-<tr id="row8673163872920"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p567473852918"><a name="p567473852918"></a><a name="p567473852918"></a>DELETE /v1.0/{project_id}/asset/process</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p8674738102920"><a name="p8674738102920"></a><a name="p8674738102920"></a><a href="取消媒资转码任务.md">取消媒资转码任务</a></p>
 </td>
 </tr>
 <tr id="row18864117163014"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p16864141714309"><a name="p16864141714309"></a><a name="p16864141714309"></a>DELETE /v1.0/{project_id}/asset/extract_audio</p>
@@ -202,6 +202,23 @@
 </tbody>
 </table>
 
+## 密钥查询<a name="section0232161773316"></a>
+
+<a name="table796242413344"></a>
+<table><thead align="left"><tr id="row1396252417347"><th class="cellrowborder" valign="top" width="59.95%" id="mcps1.1.3.1.1"><p id="p2962102423414"><a name="p2962102423414"></a><a name="p2962102423414"></a>接口</p>
+</th>
+<th class="cellrowborder" valign="top" width="40.050000000000004%" id="mcps1.1.3.1.2"><p id="p1196362419349"><a name="p1196362419349"></a><a name="p1196362419349"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1496362493418"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p66303377349"><a name="p66303377349"></a><a name="p66303377349"></a>GET /v1.0/{project_id}/asset/ciphers</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p463083719343"><a name="p463083719343"></a><a name="p463083719343"></a><a href="密钥查询接口.md">查询密钥</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## 统计分析<a name="section373855542811"></a>
 
 <a name="table1079750112910"></a>
@@ -224,23 +241,6 @@
 <tr id="row157981203295"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1479817082918"><a name="p1479817082918"></a><a name="p1479817082918"></a>GET /v1.0/{project_id}/asset/top-statistics</p>
 </td>
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1545416246297"><a name="p1545416246297"></a><a name="p1545416246297"></a><a href="查询TopN媒资信息.md">查询TopN视频信息</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-## 查询密钥<a name="section0232161773316"></a>
-
-<a name="table796242413344"></a>
-<table><thead align="left"><tr id="row1396252417347"><th class="cellrowborder" valign="top" width="59.95%" id="mcps1.1.3.1.1"><p id="p2962102423414"><a name="p2962102423414"></a><a name="p2962102423414"></a>接口</p>
-</th>
-<th class="cellrowborder" valign="top" width="40.050000000000004%" id="mcps1.1.3.1.2"><p id="p1196362419349"><a name="p1196362419349"></a><a name="p1196362419349"></a>说明</p>
-</th>
-</tr>
-</thead>
-<tbody><tr id="row1496362493418"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p66303377349"><a name="p66303377349"></a><a name="p66303377349"></a>GET /v1.0/{project_id}/asset/ciphers</p>
-</td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p463083719343"><a name="p463083719343"></a><a name="p463083719343"></a><a href="密钥查询接口.md">查询密钥</a></p>
 </td>
 </tr>
 </tbody>

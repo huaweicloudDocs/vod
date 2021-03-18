@@ -2,10 +2,10 @@
 
 在调用接口的时候，部分URL中需要填入项目ID，所以需要获取到项目ID。您可以通过以下两种方式获取项目ID。
 
--   [从控制台获取项目ID](#zh-cn_topic_0171781604_zh-cn_topic_0171449878_section16150143114253)
--   [调用API获取项目ID](#zh-cn_topic_0171781604_zh-cn_topic_0171449878_section5912143972911)
+-   [从控制台获取项目ID](#zh-cn_topic_0171781604_vod_04_0211_section16150143114253)
+-   [调用API获取项目ID](#zh-cn_topic_0171781604_vod_04_0211_section5912143972911)
 
-## 从控制台获取项目ID<a name="zh-cn_topic_0171781604_zh-cn_topic_0171449878_section16150143114253"></a>
+## 从控制台获取项目ID<a name="zh-cn_topic_0171781604_vod_04_0211_section16150143114253"></a>
 
 1.  登录[华为云](https://www.huaweicloud.com/)官网，在右上角单击账号名，选择“账号中心”。
 2.  在基本信息页面单击“管理我的凭证“，进入“我的凭证”页面。
@@ -19,7 +19,7 @@
     ![](figures/获取项目ID.png "获取项目ID")
 
 
-## 调用API获取项目ID<a name="zh-cn_topic_0171781604_zh-cn_topic_0171449878_section5912143972911"></a>
+## 调用API获取项目ID<a name="zh-cn_topic_0171781604_vod_04_0211_section5912143972911"></a>
 
 您还能通过调用[查询指定条件下的项目信息](https://support.huaweicloud.com/api-iam/iam_06_0001.html)API获取项目ID。
 
