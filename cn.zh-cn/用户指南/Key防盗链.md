@@ -33,55 +33,56 @@ Key防盗链是视频点播的加速节点与点播源站联合实现的，比Re
 2.  在左侧导航栏选择“域名管理”，进入域名管理界面。
 3.  单击域名右侧“配置 ”，选择“防盗链”页签。
 4.  单击“Key防盗链”板块，打开“防盗链开关”。
-5.  配置Key防盗链参数，具体如[表1](#table9974649519)所示。
+5.  配置Key防盗链参数，具体如[\#vod010014/table9974649519](#table9974649519)所示。
 
     **图 2**  配置Key防盗链<a name="fig45872508437"></a>  
     ![](figures/配置Key防盗链.png "配置Key防盗链")
 
     **表 1**  参数说明
 
-    <a name="table9974649519"></a>
-    <table><thead align="left"><tr id="row1497218417515"><th class="cellrowborder" valign="top" width="25.840000000000003%" id="mcps1.2.3.1.1"><p id="p2972154555"><a name="p2972154555"></a><a name="p2972154555"></a>参数</p>
+    <a name="table1219414611126"></a>
+    <table><thead align="left"><tr id="row9195164612128"><th class="cellrowborder" valign="top" width="25.840000000000003%" id="mcps1.2.3.1.1"><p id="p11195184613127"><a name="p11195184613127"></a><a name="p11195184613127"></a>参数</p>
     </th>
-    <th class="cellrowborder" valign="top" width="74.16%" id="mcps1.2.3.1.2"><p id="p7972741858"><a name="p7972741858"></a><a name="p7972741858"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="74.16%" id="mcps1.2.3.1.2"><p id="p1319534611219"><a name="p1319534611219"></a><a name="p1319534611219"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row179736410511"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p16972341857"><a name="p16972341857"></a><a name="p16972341857"></a>密钥值</p>
+    <tbody><tr id="row719554617123"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p4195194601214"><a name="p4195194601214"></a><a name="p4195194601214"></a>密钥值</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p997217410513"><a name="p997217410513"></a><a name="p997217410513"></a>即Key值，单击“生成”，可自动生成符合格式的密钥值。</p>
-    </td>
-    </tr>
-    <tr id="row12973041050"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p12973841758"><a name="p12973841758"></a><a name="p12973841758"></a>误差允许时间</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p1432280192815"><a name="p1432280192815"></a><a name="p1432280192815"></a>表示当前防盗链有效时间，默认为120分钟。</p>
-    <p id="p22451257162013"><a name="p22451257162013"></a><a name="p22451257162013"></a>示例：若鉴权URL生成时间为1573806090（2019/11/15 16:21:30），配置的<span class="parmname" id="parmname031311501356"><a name="parmname031311501356"></a><a name="parmname031311501356"></a>“误差允许时间”</span>为120分钟，则鉴权URL的失效时间为2019/11/15 18:21:30。</p>
+    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p519594618127"><a name="p519594618127"></a><a name="p519594618127"></a>即Key值，单击“生成”，可自动生成符合格式的密钥值。</p>
     </td>
     </tr>
-    <tr id="row169731044515"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p12973184055"><a name="p12973184055"></a><a name="p12973184055"></a>旧key的失效时间</p>
+    <tr id="row419513468122"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p119564671215"><a name="p119564671215"></a><a name="p119564671215"></a>误差允许时间</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p139739416515"><a name="p139739416515"></a><a name="p139739416515"></a>采用新Key时，旧Key值的失效时间，从新Key生效时开始计算，默认60分钟后失效。</p>
-    <p id="p79211317172512"><a name="p79211317172512"></a><a name="p79211317172512"></a>示例：若新Key生效时间为2019/11/15 16:21:30，配置的<span class="parmname" id="parmname132481455103510"><a name="parmname132481455103510"></a><a name="parmname132481455103510"></a>“旧Key的失效时间”</span>为60分钟，则旧鉴权URL的真正失效时间为2019/11/15 17:21:30。</p>
+    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p2195546191218"><a name="p2195546191218"></a><a name="p2195546191218"></a>表示当前防盗链有效时间，默认为120分钟。</p>
+    <p id="p9195164612121"><a name="p9195164612121"></a><a name="p9195164612121"></a>示例：若鉴权URL生成时间为1573806090（2019/11/15 16:21:30），配置的<span class="parmname" id="parmname191951946181211"><a name="parmname191951946181211"></a><a name="parmname191951946181211"></a>“误差允许时间”</span>为120分钟，则鉴权URL的失效时间为2019/11/15 18:21:30。</p>
     </td>
     </tr>
-    <tr id="row0974147514"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p097410411520"><a name="p097410411520"></a><a name="p097410411520"></a>算法</p>
+    <tr id="row11951846111214"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p2196164619121"><a name="p2196164619121"></a><a name="p2196164619121"></a>旧key的失效时间</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p5974641653"><a name="p5974641653"></a><a name="p5974641653"></a>Key值加密算法，支持如下四种算法：</p>
-    <p id="p1626022133716"><a name="p1626022133716"></a><a name="p1626022133716"></a>ABC算法：采用MD5信息摘要算法，具体实现方法请参见<a href="#section152233717511">加密算法A</a>、<a href="#section20253496273">加密算法B</a>和<a href="#section1121142971020">加密算法C</a>。</p>
-    <p id="p684353118379"><a name="p684353118379"></a><a name="p684353118379"></a>D算法：采用对称加密算法，具体实现方法请参见<a href="#section9966544143317">加密算法D</a>。</p>
-    <div class="note" id="note840115352011"><a name="note840115352011"></a><a name="note840115352011"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p164011235803"><a name="p164011235803"></a><a name="p164011235803"></a>算法ABC暂不支持HLS和DASH播放场景，建议使用算法D。</p>
+    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p8196114619124"><a name="p8196114619124"></a><a name="p8196114619124"></a>采用新Key时，旧Key值的失效时间，从新Key生效时开始计算，默认60分钟后失效。</p>
+    <p id="p3196204611128"><a name="p3196204611128"></a><a name="p3196204611128"></a>示例：若新Key生效时间为2019/11/15 16:21:30，配置的<span class="parmname" id="parmname01961946111214"><a name="parmname01961946111214"></a><a name="parmname01961946111214"></a>“旧Key的失效时间”</span>为60分钟，则旧鉴权URL的真正失效时间为2019/11/15 17:21:30。</p>
+    </td>
+    </tr>
+    <tr id="row18196154615127"><td class="cellrowborder" valign="top" width="25.840000000000003%" headers="mcps1.2.3.1.1 "><p id="p1819612461122"><a name="p1819612461122"></a><a name="p1819612461122"></a>算法</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.16%" headers="mcps1.2.3.1.2 "><p id="p20196164651218"><a name="p20196164651218"></a><a name="p20196164651218"></a>Key值加密算法，支持如下四种算法：</p>
+    <p id="p1019664631217"><a name="p1019664631217"></a><a name="p1019664631217"></a>ABC算法：采用MD5信息摘要算法，具体实现方法请参见<a href="#section152233717511">加密算法A</a>、<a href="#section20253496273">加密算法B</a>和<a href="#section1121142971020">加密算法C</a>。</p>
+    <p id="p161964462123"><a name="p161964462123"></a><a name="p161964462123"></a>D算法：采用对称加密算法，具体实现方法请参见<a href="#section9966544143317">加密算法D</a>。</p>
+    <div class="note" id="note16196194614124"><a name="note16196194614124"></a><a name="note16196194614124"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p319664641216"><a name="p319664641216"></a><a name="p319664641216"></a>算法ABC暂不支持HLS和DASH播放场景，建议使用算法D。</p>
     </div></div>
     </td>
     </tr>
     </tbody>
     </table>
 
-6.  单击“确定”，完成参数配置。
-7.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请审核，提交的信息需要包含配置的域名，及[表1](#table9974649519)中的信息。
+    单击“确定”，完成参数配置。
+
+    [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请审核，提交的信息需要包含配置的域名，及[\#vod010014/table9974649519](#table9974649519)中的信息。
 
     审核通过后Key防盗链功能才会生效。若修改了Key防盗链配置，需要重新[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)审核。
 
-8.  验证Key防盗链生效是否生效。
+    验证Key防盗链生效是否生效。
 
     [获取对应的鉴权播放地址](#section442013352310)，并使用该地址进行播放，若播放成功，则表示Key防盗链配置生效。
 

@@ -53,6 +53,6 @@ Referer防盗链是基于HTTP协议支持的Referer机制实现的，通过播�
 
 6.  配置完成后，单击“确定“。
 
-    配置完成后，需要3\~5分钟才能生效。
+    [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请审核，审核通过后，Referer防盗链才生效。
 
 

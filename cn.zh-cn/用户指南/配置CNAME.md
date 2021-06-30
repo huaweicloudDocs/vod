@@ -85,7 +85,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p1491219505324"><a name="zh-cn_topic_0117188957_p1491219505324"></a><a name="zh-cn_topic_0117188957_p1491219505324"></a>需指向的域名，即<a href="#li184701358115720">步骤1</a>获取的CNAME。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p618705355418"><a name="p618705355418"></a><a name="p618705355418"></a>以域名“test-play.example.com”为例，此处输入“test-play.example.com.c.cdnhwc1.com”。</p>
+    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p618705355418"><a name="p618705355418"></a><a name="p618705355418"></a>以域名“test-play.example.com”为例，此处输入“test-play.example.com.<span>d9235b9f</span>.c.cdnhwc1.com”。</p>
     </td>
     </tr>
     <tr id="row19122133853010"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p64191365312"><a name="p64191365312"></a><a name="p64191365312"></a>权重</p>
