@@ -10,7 +10,7 @@
 
 ## 调试<a name="section1696492974310"></a>
 
-您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=publishAssetFromObs)中直接运行调试该接口。
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=PublishAssetFromObs)中直接运行调试该接口。
 
 ## URI<a name="zh-cn_topic_0128109922_zh-cn_topic_0127940850_section5627230172812"></a>
 

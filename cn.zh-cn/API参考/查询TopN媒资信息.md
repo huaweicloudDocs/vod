@@ -6,7 +6,7 @@
 
 ## 调试<a name="section16406630174316"></a>
 
-您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=queryTopStatistics)中直接运行调试该接口。
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=ListTopStatistics)中直接运行调试该接口。
 
 ## URI<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section5241024145313"></a>
 

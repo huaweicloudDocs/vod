@@ -36,7 +36,7 @@
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p103098191147"><a name="p103098191147"></a><a name="p103098191147"></a><a href="创建媒资-OBS转存方式.md">创建媒资：OBS转存方式</a></p>
 </td>
 </tr>
-<tr id="row85361041111519"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1147944715155"><a name="p1147944715155"></a><a name="p1147944715155"></a>POST /v1.0/{project_id}/asset/reproduction</p>
+<tr id="row85361041111519"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1147944715155"><a name="p1147944715155"></a><a name="p1147944715155"></a>POST /v1.0/{project_id}<span>/asset/obs/host/stock/task</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p18536154115155"><a name="p18536154115155"></a><a name="p18536154115155"></a><a href="创建媒资-OBS托管方式.md">创建媒资：OBS托管方式</a></p>
 </td>

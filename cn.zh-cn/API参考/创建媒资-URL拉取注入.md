@@ -6,7 +6,7 @@
 
 ## 调试<a name="section8345114810114"></a>
 
-您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=uploadMetaDataByUrl)中直接运行调试该接口。
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=UploadMetaDataByUrl)中直接运行调试该接口。
 
 ## URI<a name="section1267575319524"></a>
 
