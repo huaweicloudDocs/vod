@@ -1,16 +1,16 @@
-# 音频提取<a name="vod_04_0208"></a>
+# CDN预热<a name="vod_04_0205"></a>
 
 ## 功能介绍
 
-用于从已有视频文件中提取音频。
+媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。
 
 ## 调试
 
-您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=CreateExtractAudioTask)中调试该接口。
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=CreatePreheatingAsset)中调试该接口。
 
 ## URI
 
-POST /v1.0/\{project\_id\}/asset/extract\_audio
+POST /v1.0/\{project\_id\}/asset/preheating
 
 **表 1**  路径参数
 
@@ -97,49 +97,20 @@ POST /v1.0/\{project\_id\}/asset/extract\_audio
 </thead>
 <tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>asset_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>是</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>媒资ID。</p>
-</td>
-</tr>
-<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>parameter</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p><a href="#request_Parameter">Parameter</a> object</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>需要提取音频的参数信息。</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-**表 4**  Parameter
-
-<a name="request_Parameter"></a>
-<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p>参数</p>
-</th>
-<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p>是否必选</p>
-</th>
-<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.3"><p>参数类型</p>
-</th>
-<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.4"><p>描述</p>
-</th>
-</tr>
-</thead>
-<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>format</p>
-</td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>封装格式。</p>
-<p>取值如下：</p>
-<ul><li><p>MP3</p>
-</li><li><p>AAC</p>
-</li></ul>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>已发布媒资的ID。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>urls</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Array of strings</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>已发布媒资的播放URL列表，一次最多只能预热10个URL。</p>
 </td>
 </tr>
 </tbody>
@@ -149,7 +120,7 @@ POST /v1.0/\{project\_id\}/asset/extract\_audio
 
 **状态码： 202**
 
-**表 5**  响应Body参数
+**表 4**  响应Body参数
 
 <a name="responseParameter"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
@@ -160,18 +131,11 @@ POST /v1.0/\{project\_id\}/asset/extract\_audio
 </th>
 </tr>
 </thead>
-<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>asset_id</p>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>task_id</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>视频源媒资ID。</p>
-</td>
-</tr>
-<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>audio_asset_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>提取的音频媒资ID。</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>预热任务ID。</p>
 </td>
 </tr>
 </tbody>
@@ -179,7 +143,7 @@ POST /v1.0/\{project\_id\}/asset/extract\_audio
 
 **状态码： 400**
 
-**表 6**  响应Body参数
+**表 5**  响应Body参数
 
 <a name="responseParameter_1"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
@@ -209,38 +173,47 @@ POST /v1.0/\{project\_id\}/asset/extract\_audio
 
 ## 请求示例
 
-```
-POST https://{endpoint}/v1.0/{project_id}/asset/extract_audio
+-   按媒资ID预热
 
-{
-  "asset_id" : "3e1cd21131a94525be55acf65888bf46",
-  "parameter" : {
-    "format" : "MP3"
-  }
-}
-```
+    ```
+    POST https://{endpoint}/v1.0/{project_id}/asset/preheating
+    
+    {
+      "asset_id" : "f488337c31c8e4622f1590735b134c65"
+    }
+    ```
+
+-   按媒资URL预热
+
+    ```
+    POST https://{endpoint}/v1.0/{project_id}/asset/preheating
+    
+    {
+      "urls" : [ "https://example.com/asset/9db42f5e08c15edecd99a98da241994a/313bfd52a75f95ff48e8bf02eca2ab20.flv", "https://example.com/asset/9e455adb02295aa123809e8dc7ca51c1/68b1241af3bf58bcde9914626e07f5af.mp4", "https://example.com/asset/9e455adb02295aa123809e8dc7ca51c1/play_video/68b1241af3bf58bcde9914626e07f5af_H.264_480X270_HEAACV1_300.mp4" ]
+    }
+    ```
+
 
 ## 响应示例
 
 **状态码： 202**
 
-处理成功返回
+处理成功返回。
 
 ```
 {
-  "asset_id" : "f488337c31c8e4622f1590735b134c65",
-  "audio_asset_id" : "5412"
+  "task_id" : "5199337c31c8e4622f1590735b13a263"
 }
 ```
 
 **状态码： 400**
 
-处理失败返回
+处理失败返回。
 
 ```
 {
-  "error_code" : "VOD.10062",
-  "error_msg" : "Media asset or resource does not exist, please check."
+  "error_code" : "VOD.10053",
+  "error_msg" : "The request parameter is illegal, illegal field: {xx}."
 }
 ```
 
@@ -255,12 +228,12 @@ POST https://{endpoint}/v1.0/{project_id}/asset/extract_audio
 </thead>
 <tbody><tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>202</p>
 </td>
-<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>处理成功返回</p>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>处理成功返回。</p>
 </td>
 </tr>
 <tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>400</p>
 </td>
-<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>处理失败返回</p>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>处理失败返回。</p>
 </td>
 </tr>
 </tbody>

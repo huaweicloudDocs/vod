@@ -1,16 +1,16 @@
-# 查询源站统计信息<a name="vod_04_0104"></a>
+# 查询CDN预热<a name="vod_04_0120"></a>
 
 ## 功能介绍
 
-查询点播源站的统计数据，包括流量、存储空间、转码时长。
+查询预热结果。
 
 ## 调试
 
-您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=ShowVodStatistics)中调试该接口。
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=ShowPreheatingAsset)中调试该接口。
 
 ## URI
 
-GET /v1.0/\{project\_id\}/asset/vod-statistics
+GET /v1.0/\{project\_id\}/asset/preheating
 
 **表 1**  路径参数
 
@@ -48,44 +48,13 @@ GET /v1.0/\{project\_id\}/asset/vod-statistics
 </th>
 </tr>
 </thead>
-<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>start_time</p>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>task_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>起始时间，格式为yyyymmddhhmmss。</p>
-</td>
-</tr>
-<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>end_time</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>结束时间，格式为yyyymmddhhmmss。</p>
-<ul><li><p>“start_time”、“end_time”均不存在时，“start_time”取当天零点，“end_time”取当前时间。</p>
-</li><li><p>“start_time”不存在、“end_time”存在，请求非法。</p>
-</li><li><p>“start_time”存在、“end_time”不存在，“end_time”取当前时间。</p>
-</li><li><p>只能查询最近三个月内的数据，且时间跨度不能超过31天。</p>
-</li><li><p>起始时间和结束时间会自动规整，起始时间规整为指定时间所在的整点时刻，结束时间规整为指定时间所在时间的下一小时整点时刻。</p>
-</li></ul>
-</td>
-</tr>
-<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>interval</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>查询粒度间隔。</p>
-<p>取值如下：</p>
-<ul><li><p>时间跨度1天：1小时、4小时、8小时，分别对应3600秒、14400秒和28800秒。</p>
-</li><li><p>时间跨度2~7天：1小时、4小时、8小时、1天，分别对应3600秒、14400秒、28800秒和86400秒。</p>
-</li><li><p>时间跨度8~31天：4小时、8小时、1天，分别对应14400秒、28800秒和86400秒。</p>
-</li></ul>
-<p>单位：秒。</p>
-<p>若不设置，默认取对应时间跨度的最小间隔。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>任务ID</p>
 </td>
 </tr>
 </tbody>
@@ -139,7 +108,7 @@ GET /v1.0/\{project\_id\}/asset/vod-statistics
 
 ## 响应参数
 
-**状态码： 200**
+**状态码： 202**
 
 **表 4**  响应Body参数
 
@@ -152,33 +121,19 @@ GET /v1.0/\{project\_id\}/asset/vod-statistics
 </th>
 </tr>
 </thead>
-<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>start_time</p>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>preheating_results</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Array of <a href="#response_PreheatingResult">PreheatingResult</a> objects</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>统计起始时间。</p>
-</td>
-</tr>
-<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>interval</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>统计间隔。</p>
-</td>
-</tr>
-<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>sample_data</p>
-</td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Array of <a href="#response_VodSampleData">VodSampleData</a> objects</p>
-</td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>采样数据数组。从start_time开始，每个间隔对应一个采样数据。</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>预热任务数组</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**表 5**  VodSampleData
+**表 5**  PreheatingResult
 
-<a name="response_VodSampleData"></a>
+<a name="response_PreheatingResult"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
 </th>
 <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
@@ -187,20 +142,23 @@ GET /v1.0/\{project\_id\}/asset/vod-statistics
 </th>
 </tr>
 </thead>
-<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>storage</p>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>url</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Float</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>存储空间。</p>
-<p>单位：GB。</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>媒资URL。</p>
 </td>
 </tr>
-<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>transcode</p>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>status</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Long</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>转码时长。</p>
-<p>单位：秒。</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>预热任务状态。</p>
+<p>取值如下：</p>
+<ul><li><p>processing：处理中</p>
+</li><li><p>succeed：预热完成</p>
+</li><li><p>failed：预热失败</p>
+</li></ul>
 </td>
 </tr>
 </tbody>
@@ -240,22 +198,26 @@ GET /v1.0/\{project\_id\}/asset/vod-statistics
 
 ```
 GET
-https://{endpoint}/v1.0/{project_id}/asset/vod-statistics?start_time={start_time}
+https://{endpoint}/v1.0/{project_id}/asset/preheating?task_id={task_id}
 ```
 
 ## 响应示例
 
-**状态码： 200**
+**状态码： 202**
 
 处理成功返回。
 
 ```
 {
-  "start_time" : "20190528000000",
-  "interval" : 3600,
-  "sample_data" : [ {
-    "storage" : 0,
-    "transcode" : 0
+  "preheating_results" : [ {
+    "url" : "https://example.com/asset/9db42f5e08c15edecd99a98da241994a/313bfd52a75f95ff48e8bf02eca2ab20.flv",
+    "status" : "processing"
+  }, {
+    "url" : "https://example.com/asset/9e455adb02295aa123809e8dc7ca51c1/68b1241af3bf58bcde9914626e07f5af.mp4",
+    "status" : "succeed"
+  }, {
+    "url" : "https://example.com/asset/9e455adb02295aa123809e8dc7ca51c1/play_video/68b1241af3bf58bcde9914626e07f5af_H.264_480X270_HEAACV1_300.mp4",
+    "status" : "failed"
   } ]
 }
 ```
@@ -280,7 +242,7 @@ https://{endpoint}/v1.0/{project_id}/asset/vod-statistics?start_time={start_time
 </th>
 </tr>
 </thead>
-<tbody><tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>200</p>
+<tbody><tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>202</p>
 </td>
 <td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>处理成功返回。</p>
 </td>

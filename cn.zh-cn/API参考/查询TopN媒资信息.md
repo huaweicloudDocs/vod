@@ -1,37 +1,36 @@
 # 查询TopN媒资信息<a name="vod_04_0105"></a>
 
-## 功能介绍<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section114814192538"></a>
+## 功能介绍
 
 查询指定域名在指定日期播放次数排名Top 100的媒资统计数据。
 
-## 调试<a name="section16406630174316"></a>
+## 调试
 
-您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=ListTopStatistics)中直接运行调试该接口。
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VOD&api=ListTopStatistics)中调试该接口。
 
-## URI<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section5241024145313"></a>
+## URI
 
-GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/top-statistics
+GET /v1.0/\{project\_id\}/asset/top-statistics
 
 **表 1**  路径参数
 
-<a name="table6869913124919"></a>
-<table><thead align="left"><tr id="vod_04_0196_row58691013184917"><th class="cellrowborder" valign="top" width="18.98%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p18869171324920"><a name="vod_04_0196_p18869171324920"></a><a name="vod_04_0196_p18869171324920"></a>参数</p>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="19.400000000000002%" id="mcps1.2.5.1.2"><p id="vod_04_0196_p16174217193312"><a name="vod_04_0196_p16174217193312"></a><a name="vod_04_0196_p16174217193312"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.299999999999997%" id="mcps1.2.5.1.3"><p id="vod_04_0196_p1386920134497"><a name="vod_04_0196_p1386920134497"></a><a name="vod_04_0196_p1386920134497"></a>类型</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.3"><p>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="44.32%" id="mcps1.2.5.1.4"><p id="vod_04_0196_p1386931394910"><a name="vod_04_0196_p1386931394910"></a><a name="vod_04_0196_p1386931394910"></a>说明</p>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.4"><p>描述</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="vod_04_0196_row1586931374911"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p14253192105011"><a name="vod_04_0196_p14253192105011"></a><a name="vod_04_0196_p14253192105011"></a>project_id</p>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.400000000000002%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p18172181763318"><a name="vod_04_0196_p18172181763318"></a><a name="vod_04_0196_p18172181763318"></a>是</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.299999999999997%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p62548235018"><a name="vod_04_0196_p62548235018"></a><a name="vod_04_0196_p62548235018"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.32%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p0254323500"><a name="vod_04_0196_p0254323500"></a><a name="vod_04_0196_p0254323500"></a>项目ID，获取方法请参考<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0058.html" target="_blank" rel="noopener noreferrer">获取项目ID</a>。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>项目ID，获取方法请参考<a href="https://support.huaweicloud.com/usermanual-vod/vod_01_0058.html" target="_blank" rel="noopener noreferrer">获取项目ID</a></p>
 </td>
 </tr>
 </tbody>
@@ -39,212 +38,254 @@ GET /v1.0/\{[project\_id](获取项目ID.md)\}/asset/top-statistics
 
 **表 2**  Query参数
 
-<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_table19206131"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_row16057184"><th class="cellrowborder" valign="top" width="18.77%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25563541"></a>参数</p>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="19.61%" id="mcps1.2.5.1.2"><p id="p980717299224"><a name="p980717299224"></a><a name="p980717299224"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.580000000000002%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p17343428"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p17343428"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p17343428"></a>类型</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.3"><p>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="44.04%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p57380926"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p57380926"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p57380926"></a>说明</p>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.4"><p>描述</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_row30822828"><td class="cellrowborder" valign="top" width="18.77%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p13621136"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p13621136"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p13621136"></a>domain</p>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>domain</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.61%" headers="mcps1.2.5.1.2 "><p id="p1280511294223"><a name="p1280511294223"></a><a name="p1280511294223"></a>是</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.580000000000002%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46380963"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.04%" headers="mcps1.2.5.1.4 "><p id="p8361154813166"><a name="p8361154813166"></a><a name="p8361154813166"></a>查询域名，暂只支持查询单个或者全部域名。</p>
-<p id="p127871167428"><a name="p127871167428"></a><a name="p127871167428"></a>取值如下：</p>
-<a name="ul11782191634215"></a><a name="ul11782191634215"></a><ul id="ul11782191634215"><li>单个加速域名，格式：example.test1.com。</li><li>ALL：表示查询名下全部域名。</li></ul>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>查询域名，暂只支持查询单个或者全部域名。</p>
+<p>取值如下：</p>
+<ul><li><p>单个加速域名，格式：example.test1.com。</p>
+</li><li><p>ALL：表示查询名下全部域名。</p>
+</li></ul>
 </td>
 </tr>
-<tr id="row751454883517"><td class="cellrowborder" valign="top" width="18.77%" headers="mcps1.2.5.1.1 "><p id="p14531204803520"><a name="p14531204803520"></a><a name="p14531204803520"></a>date</p>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>date</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.61%" headers="mcps1.2.5.1.2 "><p id="p280162912211"><a name="p280162912211"></a><a name="p280162912211"></a>是</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.580000000000002%" headers="mcps1.2.5.1.3 "><p id="p13531104818354"><a name="p13531104818354"></a><a name="p13531104818354"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.04%" headers="mcps1.2.5.1.4 "><p id="p1854632163617"><a name="p1854632163617"></a><a name="p1854632163617"></a>查询日期，格式为yyyymmdd。</p>
-<a name="ul20962449184219"></a><a name="ul20962449184219"></a><ul id="ul20962449184219"><li>date必须为昨天或之前的日期。</li><li>最多只能查最近一个月内的数据。</li></ul>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>查询日期，格式为yyyymmdd</p>
+<ul><li><p>date必须为昨天或之前的日期。</p>
+</li><li><p>最多只能查最近一个月内的数据。</p>
+</li></ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-## 请求参数<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section7297229175319"></a>
+## 请求参数
 
 **表 3**  请求Header参数
 
 <a name="HeaderParameter"></a>
-<table><thead align="left"><tr id="vod_04_0196_row1359311223199"><th class="cellrowborder" valign="top" width="18.89%" id="mcps1.2.5.1.1"><p id="vod_04_0196_p959302213191"><a name="vod_04_0196_p959302213191"></a><a name="vod_04_0196_p959302213191"></a>参数</p>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="19.23%" id="mcps1.2.5.1.2"><p id="vod_04_0196_p10968335203313"><a name="vod_04_0196_p10968335203313"></a><a name="vod_04_0196_p10968335203313"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.04%" id="mcps1.2.5.1.3"><p id="vod_04_0196_p6594132291914"><a name="vod_04_0196_p6594132291914"></a><a name="vod_04_0196_p6594132291914"></a>类型</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.3"><p>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="44.84%" id="mcps1.2.5.1.4"><p id="vod_04_0196_p1659492213198"><a name="vod_04_0196_p1659492213198"></a><a name="vod_04_0196_p1659492213198"></a>说明</p>
+<th class="cellrowborder" valign="top" width="40%" id="mcps1.2.5.1.4"><p>描述</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="vod_04_0196_row5593132218192"><td class="cellrowborder" valign="top" width="18.89%" headers="mcps1.2.5.1.1 "><p id="vod_04_0196_p959417226199"><a name="vod_04_0196_p959417226199"></a><a name="vod_04_0196_p959417226199"></a>X-Auth-Token</p>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>X-Auth-Token</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.23%" headers="mcps1.2.5.1.2 "><p id="vod_04_0196_p189688351336"><a name="vod_04_0196_p189688351336"></a><a name="vod_04_0196_p189688351336"></a>是</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.04%" headers="mcps1.2.5.1.3 "><p id="vod_04_0196_p5594132231911"><a name="vod_04_0196_p5594132231911"></a><a name="vod_04_0196_p5594132231911"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.84%" headers="mcps1.2.5.1.4 "><p id="vod_04_0196_p1159416229196"><a name="vod_04_0196_p1159416229196"></a><a name="vod_04_0196_p1159416229196"></a>用户Token。 通过调用IAM服务获取用户Token接口获取（响应消息头中X-Subject-Token的值）。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>用户Token，使用Token鉴权方式时必选。</p>
+<p>通过调用IAM服务获取用户Token接口获取（响应消息头中X-Subject-Token的值）。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>Authorization</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>使用AK/SK方式认证时必选，携带的鉴权信息。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>X-Sdk-Date</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>使用AK/SK方式认证时必选，请求的发生时间。</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## 请求示例<a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_section1249493515311"></a>
+## 响应参数
+
+**状态码： 200**
+
+**表 4**  响应Body参数
+
+<a name="responseParameter"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>top_urls</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Array of <a href="#response_TopUrl">TopUrl</a> objects</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 ">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
+**表 5**  TopUrl
+
+<a name="response_TopUrl"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>value</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Long</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>总播放次数。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>asset_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>媒资ID。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>title</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>媒资名称。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>duration</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>媒资时长。</p>
+<p>单位：秒。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>size</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>Long</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>媒资原始大小。</p>
+<p>单位：字节。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**状态码： 400**
+
+**表 6**  响应Body参数
+
+<a name="responseParameter_1"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>error_code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>错误码。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p>error_msg</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p>错误描述。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 请求示例
 
 ```
-GET /v1.0/{project_id}/asset/top-statistics?domain=ALL&date=20190612
+GET
+https://{endpoint}/v1.0/{project_id}/asset/top-statistics?domain=ALL&date=20190612
 ```
 
-## 返回参数<a name="section12889132584818"></a>
+## 响应示例
 
--   **处理成功时返回**
+**状态码： 200**
 
-    **表 4**  处理成功返回参数
+处理成功返回。
 
-    <a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_table17829578"></a>
-    <table><thead align="left"><tr id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_row36608226"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p12476353"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p12476353"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p12476353"></a>参数</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p51649700"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p51649700"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p51649700"></a>类型</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p3951668"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p3951668"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p3951668"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_row33716833"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46708959"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46708959"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p46708959"></a>top_urls</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p38413446"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p38413446"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p38413446"></a>Array of <a href="#table114221659173917">TopUrl </a>objects</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25329374"><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25329374"></a><a name="zh-cn_topic_0128109924_zh-cn_topic_0127930889_p25329374"></a>统计结果数组，最多返回100个结果。</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+```
+{
+  "top_urls" : [ {
+    "value" : 0,
+    "asset_id" : "548b6023bf2cc925bd64343f04ca0f88",
+    "title" : "test",
+    "duration" : 0,
+    "size" : 0
+  } ]
+}
+```
 
-    **表 5**  TopUrl参数说明
+**状态码： 400**
 
-    <a name="table114221659173917"></a>
-    <table><thead align="left"><tr id="row1242215943913"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p1042212597391"><a name="p1042212597391"></a><a name="p1042212597391"></a>参数</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p13439159133918"><a name="p13439159133918"></a><a name="p13439159133918"></a>类型</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="p11422155983913"><a name="p11422155983913"></a><a name="p11422155983913"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row74397599397"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p5439559163920"><a name="p5439559163920"></a><a name="p5439559163920"></a>asset_id</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1439195911398"><a name="p1439195911398"></a><a name="p1439195911398"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p10439859103913"><a name="p10439859103913"></a><a name="p10439859103913"></a>媒资ID。</p>
-    </td>
-    </tr>
-    <tr id="row1072004164013"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p47202424018"><a name="p47202424018"></a><a name="p47202424018"></a>value</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1172004174019"><a name="p1172004174019"></a><a name="p1172004174019"></a>Long</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p672012412407"><a name="p672012412407"></a><a name="p672012412407"></a>总播放次数。</p>
-    </td>
-    </tr>
-    <tr id="row1650179204019"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p4675712413"><a name="p4675712413"></a><a name="p4675712413"></a>title</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p050112984013"><a name="p050112984013"></a><a name="p050112984013"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p14501199114013"><a name="p14501199114013"></a><a name="p14501199114013"></a>媒资名称。</p>
-    </td>
-    </tr>
-    <tr id="row18876131311403"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p158761613144015"><a name="p158761613144015"></a><a name="p158761613144015"></a>duration</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p18761131406"><a name="p18761131406"></a><a name="p18761131406"></a>Integer</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p755917496194"><a name="p755917496194"></a><a name="p755917496194"></a>媒资时长。</p>
-    <p id="p158761913114013"><a name="p158761913114013"></a><a name="p158761913114013"></a>单位：秒。</p>
-    </td>
-    </tr>
-    <tr id="row2511425154015"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1351142584011"><a name="p1351142584011"></a><a name="p1351142584011"></a>size</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p35122584014"><a name="p35122584014"></a><a name="p35122584014"></a>Long</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p8707165501913"><a name="p8707165501913"></a><a name="p8707165501913"></a>媒资原始大小。</p>
-    <p id="p651142518402"><a name="p651142518402"></a><a name="p651142518402"></a>单位：字节。</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+处理失败返回。
 
--   **处理失败时返回**
+```
+{
+  "error_code" : "VOD.10053",
+  "error_msg" : "The request parameter is illegal, illegal field: {xx}."
+}
+```
 
-    **表 6**  处理失败返回参数
+## 状态码
 
-    <a name="table8107146194412"></a>
-    <table><thead align="left"><tr id="row16107862441"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p1412466124414"><a name="p1412466124414"></a><a name="p1412466124414"></a>参数</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p121241568444"><a name="p121241568444"></a><a name="p121241568444"></a>类型</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="p1312414674420"><a name="p1312414674420"></a><a name="p1312414674420"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row13124116124413"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p11240634415"><a name="p11240634415"></a><a name="p11240634415"></a>error_code</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p414018615446"><a name="p414018615446"></a><a name="p414018615446"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p161241669445"><a name="p161241669445"></a><a name="p161241669445"></a>错误码。</p>
-    </td>
-    </tr>
-    <tr id="row01401168446"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p171409604412"><a name="p171409604412"></a><a name="p171409604412"></a>error_msg</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p91404614444"><a name="p91404614444"></a><a name="p91404614444"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p16140666447"><a name="p16140666447"></a><a name="p16140666447"></a>错误描述。</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+<a name="status_code"></a>
+<table><thead align="left"><tr><th class="cellrowborder" valign="top" width="15%" id="mcps1.1.3.1.1"><p>状态码 </p>
+</th>
+<th class="cellrowborder" valign="top" width="85%" id="mcps1.1.3.1.2"><p>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>处理成功返回。</p>
+</td>
+</tr>
+<tr><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p>400</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p>处理失败返回。</p>
+</td>
+</tr>
+</tbody>
+</table>
 
+## 错误码
 
-## 返回示例<a name="section5664343618"></a>
-
--   处理成功时返回（200 OK）
-
-    ```
-    {   
-        "top_urls": 
-        [     
-         { 
-              "value": 0, 
-              "asset_id": "548b6023bf2cc925bd64343f04ca0f88",
-    	  "title": "test",
-    	  "duration": 0,
-    	  "size": 0
-    	  }
-    	]
-    }
-    ```
-
-
--   处理失败时返回 （400 Bad Request）
-
-    ```
-    {
-      "error_code": "VOD.10053",
-      "error_msg": "请求参数非法，非法字段：{xx}。"
-    }
-    ```
-
-
-## 错误码<a name="section569214377267"></a>
-
-错误码请参见[错误码](错误码.md)。
+请参见[错误码](错误码.md)。
 
