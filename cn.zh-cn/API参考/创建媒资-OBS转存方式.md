@@ -105,9 +105,9 @@ POST /v1.0/\{project\_id\}/asset/reproduction
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>上传音视频文件的格式。</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>转存的音视频文件类型。</p>
 <p>取值如下：</p>
-<ul><li><p>视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS</p>
+<ul><li><p>视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV</p>
 </li><li><p>音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2</p>
 </li></ul>
 <p>若上传格式为音频文件，则不支持转码、添加水印和字幕。</p>
@@ -242,7 +242,7 @@ POST /v1.0/\{project\_id\}/asset/reproduction
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p><a href="#request_File_addr">File_addr</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>媒资存储参数信息</p>
+<td class="cellrowborder" valign="top" width="40%" headers="mcps1.2.5.1.4 "><p>媒资存储参数信息。</p>
 </td>
 </tr>
 <tr><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p>storage_mode</p>

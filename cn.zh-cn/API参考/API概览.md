@@ -70,7 +70,7 @@
 </tr>
 <tr id="row621135995620"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p148567022317"><a name="p148567022317"></a><a name="p148567022317"></a>POST /v1.0/{project_id}/asset/process</p>
 </td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1452516367231"><a name="p1452516367231"></a><a name="p1452516367231"></a><a href="媒资处理.md">媒资处理</a></p>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1452516367231"><a name="p1452516367231"></a><a name="p1452516367231"></a><a href="媒资处理-0.md">媒资处理</a></p>
 </td>
 </tr>
 <tr id="row1986632555718"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p567473852918"><a name="p567473852918"></a><a name="p567473852918"></a>DELETE /v1.0/{project_id}/asset/process</p>
@@ -148,6 +148,33 @@
 </tbody>
 </table>
 
+## OBS托管管理<a name="section43034591211"></a>
+
+<a name="table17210172761218"></a>
+<table><thead align="left"><tr id="row82103278124"><th class="cellrowborder" valign="top" width="59.95%" id="mcps1.1.3.1.1"><p id="p8210112718124"><a name="p8210112718124"></a><a name="p8210112718124"></a>接口</p>
+</th>
+<th class="cellrowborder" valign="top" width="40.050000000000004%" id="mcps1.1.3.1.2"><p id="p2021017274127"><a name="p2021017274127"></a><a name="p2021017274127"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1521042751214"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p821015274129"><a name="p821015274129"></a><a name="p821015274129"></a>GET /v1.0/{project_id}/asset/obs/host/stock/task</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p132107279121"><a name="p132107279121"></a><a name="p132107279121"></a><a href="查询托管任务.md">查询托管任务</a></p>
+</td>
+</tr>
+<tr id="row72101427171216"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p102101027171217"><a name="p102101027171217"></a><a name="p102101027171217"></a>GET /v1.0/{project_id}/asset/obs/host/stock/task/details</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1021116273125"><a name="p1021116273125"></a><a name="p1021116273125"></a><a href="查询托管任务详情.md">查询托管任务详情</a></p>
+</td>
+</tr>
+<tr id="row1721112781210"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p189551522123"><a name="p189551522123"></a><a name="p189551522123"></a>GET /v1.0/{project_id}/asset/obs/host/task/details</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p14211112711127"><a name="p14211112711127"></a><a name="p14211112711127"></a><a href="查询托管媒资详情.md">查询托管媒资详情</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## 媒资预热<a name="section893685092412"></a>
 
 <a name="table1966855842420"></a>
@@ -213,7 +240,7 @@
 </thead>
 <tbody><tr id="row1496362493418"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p66303377349"><a name="p66303377349"></a><a name="p66303377349"></a>GET /v1.0/{project_id}/asset/ciphers</p>
 </td>
-<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p463083719343"><a name="p463083719343"></a><a name="p463083719343"></a><a href="秘钥查询接口.md">查询密钥</a></p>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p463083719343"><a name="p463083719343"></a><a name="p463083719343"></a><a href="密钥查询.md">查询密钥</a></p>
 </td>
 </tr>
 </tbody>
@@ -241,6 +268,75 @@
 <tr id="row157981203295"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1479817082918"><a name="p1479817082918"></a><a name="p1479817082918"></a>GET /v1.0/{project_id}/asset/top-statistics</p>
 </td>
 <td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1545416246297"><a name="p1545416246297"></a><a name="p1545416246297"></a><a href="查询TopN媒资信息.md">查询TopN视频信息</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 转码模板组管理<a name="section19397143214177"></a>
+
+<a name="table440784620177"></a>
+<table><thead align="left"><tr id="row1340794619177"><th class="cellrowborder" valign="top" width="59.95%" id="mcps1.1.3.1.1"><p id="p140714681716"><a name="p140714681716"></a><a name="p140714681716"></a>接口</p>
+</th>
+<th class="cellrowborder" valign="top" width="40.050000000000004%" id="mcps1.1.3.1.2"><p id="p940764661713"><a name="p940764661713"></a><a name="p940764661713"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row540784618174"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p54071446111719"><a name="p54071446111719"></a><a name="p54071446111719"></a>POST /v1.0/{project_id}/asset/template_group/transcodings</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p15407144613172"><a name="p15407144613172"></a><a name="p15407144613172"></a><a href="创建自定义转码模板组.md">创建自定义转码模板组</a></p>
+</td>
+</tr>
+<tr id="row2040712468178"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p1840754641716"><a name="p1840754641716"></a><a name="p1840754641716"></a>GET /v1.0/{project_id}/asset/template_group/transcodings</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p340764681714"><a name="p340764681714"></a><a name="p340764681714"></a><a href="查询转码模板组列表.md">查询转码模板组列表</a></p>
+</td>
+</tr>
+<tr id="row1140714464171"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p140764611713"><a name="p140764611713"></a><a name="p140764611713"></a>PUT /v1.0/{project_id}/asset/template_group/transcodings</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1940744615176"><a name="p1940744615176"></a><a name="p1940744615176"></a><a href="修改自定义转码模板组.md">修改自定义转码模板组</a></p>
+</td>
+</tr>
+<tr id="row1660865031712"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p8967946142012"><a name="p8967946142012"></a><a name="p8967946142012"></a>DELETE /v1.0/{project_id}/asset/template_group/transcodings</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p19609155021710"><a name="p19609155021710"></a><a name="p19609155021710"></a><a href="删除自定义转码模板组.md">删除自定义转码模板组</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 水印模板管理<a name="section365617455217"></a>
+
+<a name="table15949171011223"></a>
+<table><thead align="left"><tr id="row169491104227"><th class="cellrowborder" valign="top" width="59.95%" id="mcps1.1.3.1.1"><p id="p9949161052211"><a name="p9949161052211"></a><a name="p9949161052211"></a>接口</p>
+</th>
+<th class="cellrowborder" valign="top" width="40.050000000000004%" id="mcps1.1.3.1.2"><p id="p8949141062210"><a name="p8949141062210"></a><a name="p8949141062210"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1694911019223"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p294991014221"><a name="p294991014221"></a><a name="p294991014221"></a>POST /v1.0/{project_id}/template/watermark</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p149490108222"><a name="p149490108222"></a><a name="p149490108222"></a><a href="创建水印模板.md">创建水印模板</a></p>
+</td>
+</tr>
+<tr id="row1194941052212"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p99491310102212"><a name="p99491310102212"></a><a name="p99491310102212"></a>PUT /v1.0/{project_id}/template/watermark</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p99491910112215"><a name="p99491910112215"></a><a name="p99491910112215"></a><a href="修改水印模板.md">修改水印模板</a></p>
+</td>
+</tr>
+<tr id="row18949710152210"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p164151815244"><a name="p164151815244"></a><a name="p164151815244"></a>GET /v1.0/{project_id}/template/watermark</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p17949110172219"><a name="p17949110172219"></a><a name="p17949110172219"></a><a href="查询水印列表.md">查询水印列表</a></p>
+</td>
+</tr>
+<tr id="row6949610172217"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p169491010132211"><a name="p169491010132211"></a><a name="p169491010132211"></a>DELETE /v1.0/{project_id}/template/watermark</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p0949110192216"><a name="p0949110192216"></a><a name="p0949110192216"></a><a href="删除水印模板.md">删除水印模板</a></p>
+</td>
+</tr>
+<tr id="row17949191092219"><td class="cellrowborder" valign="top" width="59.95%" headers="mcps1.1.3.1.1 "><p id="p14949151017228"><a name="p14949151017228"></a><a name="p14949151017228"></a>POST /v1.0/{project_id}/watermark/status/uploaded</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.050000000000004%" headers="mcps1.1.3.1.2 "><p id="p1894951032219"><a name="p1894951032219"></a><a name="p1894951032219"></a><a href="确认水印图片上传.md">确认水印图片上传</a></p>
 </td>
 </tr>
 </tbody>
