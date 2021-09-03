@@ -42,10 +42,9 @@ Referer防盗链是基于HTTP协议支持的Referer机制实现的，通过播�
     <tr id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_row4725335657"><td class="cellrowborder" valign="top" width="10.67%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p1872653520517"><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p1872653520517"></a><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p1872653520517"></a>规则</p>
     </td>
     <td class="cellrowborder" valign="top" width="89.33%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p15426936145216"><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p15426936145216"></a><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p15426936145216"></a>黑名单或白名单中的域名。</p>
-    <a name="zh-cn_topic_0129356805_ul1316151174219"></a><a name="zh-cn_topic_0129356805_ul1316151174219"></a><ul id="zh-cn_topic_0129356805_ul1316151174219"><li>最多支持4级域名。</li><li>规则最多支持100条（最少1条），每一行一条记录，或者以英文<span class="parmvalue" id="zh-cn_topic_0129356805_parmvalue1116131117425"><a name="zh-cn_topic_0129356805_parmvalue1116131117425"></a><a name="zh-cn_topic_0129356805_parmvalue1116131117425"></a>“;”</span>分隔。</li><li>域名前不能带协议名（http://和https://）。</li><li>域名为前缀匹配，若填写<span class="parmvalue" id="parmvalue197544513488"><a name="parmvalue197544513488"></a><a name="parmvalue197544513488"></a>“example.example01.com”</span>，则<span class="parmvalue" id="parmvalue845174984814"><a name="parmvalue845174984814"></a><a name="parmvalue845174984814"></a>“example.example01.com/123”</span>和<span class="parmvalue" id="parmvalue11108954134814"><a name="parmvalue11108954134814"></a><a name="parmvalue11108954134814"></a>“example.example01.com.cn”</span>也会匹配成功。</li></ul>
-    <p id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p588117345615"><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p588117345615"></a><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p588117345615"></a>示例如下：</p>
-    <pre class="screen" id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_screen186510416563"><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_screen186510416563"></a><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_screen186510416563"></a>example.example01.com
-    example.example02.com</pre>
+    <p id="p1863020169579"><a name="p1863020169579"></a><a name="p1863020169579"></a>支持输入域名或IP地址，以英文“;”进行分割，域名、IP地址可混合输入，支持泛域名添加。输入的域名、IP地址总数不能超过100个。</p>
+    <p id="p20551112435715"><a name="p20551112435715"></a><a name="p20551112435715"></a>示例如下：</p>
+    <pre class="screen" id="screen1657983116576"><a name="screen1657983116576"></a><a name="screen1657983116576"></a>www.example.com;*.test.com;192.168.0.0</pre>
     </td>
     </tr>
     </tbody>
@@ -53,6 +52,6 @@ Referer防盗链是基于HTTP协议支持的Referer机制实现的，通过播�
 
 6.  配置完成后，单击“确定“。
 
-    [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请审核，审核通过后，Referer防盗链才生效。
+    大约需要3-5分钟，Referer防盗链才生效。
 
 
