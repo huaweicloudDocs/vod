@@ -2,7 +2,7 @@
 
 ## 功能介绍
 
-媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。
+媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。单租户每天最多预热1000个，单次提交不超过1000个。
 
 ## 调试
 
@@ -84,7 +84,7 @@ POST /v1.0/\{project\_id\}/asset/preheating
 
 **表 3**  请求Body参数
 
-<a name="requestParameter"></a>
+<a name="request_CreatePreheatingAssetReq"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p>参数</p>
 </th>
 <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p>是否必选</p>
@@ -122,7 +122,7 @@ POST /v1.0/\{project\_id\}/asset/preheating
 
 **表 4**  响应Body参数
 
-<a name="responseParameter"></a>
+<a name="response_PreheatingAssetRsp"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
 </th>
 <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
@@ -145,7 +145,7 @@ POST /v1.0/\{project\_id\}/asset/preheating
 
 **表 5**  响应Body参数
 
-<a name="responseParameter_1"></a>
+<a name="response_ErrorResponse"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p>参数</p>
 </th>
 <th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p>参数类型</p>
